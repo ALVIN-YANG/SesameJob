@@ -7,6 +7,7 @@
 //
 
 #import "SecondView.h"
+#import "FastJobViewController.h"
 
 @interface SecondView()
 @property (weak, nonatomic) IBOutlet UIButton *ButtonOne;
@@ -14,24 +15,35 @@
 @property (weak, nonatomic) IBOutlet UIButton *ButtonThree;
 @property (weak, nonatomic) IBOutlet UIButton *ButtonFour;
 
+
 @end
 @implementation SecondView
+- (void)awakeFromNib{
 
+}
 
 
 - (IBAction)ButtonOneClick:(id)sender {
-    YLQLog(@"点击了第一个Button");
+    if ([self.delegate respondsToSelector:@selector(fastJobButtonClick)]) {
+        [self.delegate fastJobButtonClick];
+    }
 }
 
 - (IBAction)ButtonTwoClick:(id)sender {
-    YLQLog(@"点击了第二个Button");
+    if ([self.delegate respondsToSelector:@selector(miaoJobButtonClick)]) {
+        [self.delegate miaoJobButtonClick];
+    }
 }
 
 - (IBAction)ButtonThreeClick:(id)sender {
-    YLQLog(@"点击了第三个Button");
+    if ([self.delegate respondsToSelector:@selector(nearJobButtonClick)]) {
+        [self.delegate nearJobButtonClick];
+    }
 }
 
 - (IBAction)ButtonFourClick:(id)sender {
-    YLQLog(@"点击了第四个Button");
+    if ([self.delegate respondsToSelector:@selector(travelJobButtonClick)]) {
+        [self.delegate travelJobButtonClick];
+    }
 }
 @end

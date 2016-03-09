@@ -13,16 +13,24 @@
 #import "YLQHomeTableView.h"
 #import "YLQCellModel.h"
 #import "YLQTableCell.h"
+#import "YLQRefreshHeader.h"
+#import "YLQRefreshFooter.h"
+#import "FastJobViewController.h"
 #import <Masonry.h>
 
 
 
-@interface HomeViewController ()<YLQScrollPageDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@interface HomeViewController ()<YLQScrollPageDelegate, UIScrollViewDelegate, UITableViewDelegate, SecondViewDelegate>
 
 @property (nonatomic, strong) YLQScrollPage      * topScrollView;
 @property (nonatomic, strong) YLQScrollPage      * midScrollView;
 @property (nonatomic, weak) SecondView         * secondView;
 @property (nonatomic, weak) RefreshView        * refreshView;
+
+//footer
+@property (nonatomic, assign, getter=isHeaderRefreshing) BOOL headerRefreshing;
+//header
+@property (nonatomic, assign, getter=isFooterRefreshing) BOOL footerRefreshing;
 @end
 
 static NSString *const ID = @"cell";
@@ -35,7 +43,13 @@ static NSString *const Mid = @"Mid";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"芝麻兼职";
+    self.tableView.backgroundColor = YLQColor(210, 210, 210)
     [self setupTableView];
+    [self downUpdate];
+    //对tabBarButton的监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarButtonDidRepeatClick) name:YLQTabBarButtonDidRepeatClickNotification object:nil];
+    //对title监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleBarButtonDidRepeatClick) name:YLQTitleBarButtonDidRepeatClickNotification object:nil];
 }
 
 #pragma mark - 懒加载
@@ -87,6 +101,24 @@ static NSString *const Mid = @"Mid";
     return _midScrollView;
 }
 
+#pragma mark - 时间监听
+- (void)tabBarButtonDidRepeatClick{
+    //如果当前控制器View不在window上,直接返回
+    //self.view.window 可以拿到所在控制器view在哪一个window上
+    if(self.view.window == nil) return;
+    //如果当前控制器的view与屏幕不重叠,直接返回
+    if(![self.view ylq_coincideWithView:nil]) return;
+    
+    
+    if(self.isHeaderRefreshing) return;
+    //下拉刷新
+    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)titleBarButtonDidRepeatClick{
+    [self tabBarButtonDidRepeatClick];
+}
+
 #pragma mark - setupTableView
 - (void)setupTableView{
     self.tableView.delegate = self;
@@ -95,6 +127,29 @@ static NSString *const Mid = @"Mid";
 
 }
 
+#pragma mark - update
+- (void)downUpdate{
+    
+    //header
+    self.tableView.mj_header = [YLQRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewJobMessage)];
+    [self.tableView.mj_header beginRefreshing];
+    //footer
+    self.tableView.mj_footer = [YLQRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreJobMessage)];
+}
+
+- (void)loadNewJobMessage{
+    YLQLog(@"加载数据");
+}
+
+- (void)loadMoreJobMessage{
+    YLQLog(@"加载新数据");
+}
+
+#pragma mark - SecondViewDelegate
+- (void)fastJobButtonClick{
+    FastJobViewController *fastVC = [[FastJobViewController alloc] init];
+    [self.navigationController pushViewController:fastVC animated:YES];
+}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

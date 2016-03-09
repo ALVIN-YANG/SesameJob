@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YLQTabBarController.h"
+#import "YLQTopWindow.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +21,32 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[YLQTabBarController alloc] init];
     [self.window makeKeyAndVisible];
-    
+    //显示顶层window
+    [YLQTopWindow showWithStatusBarClickWithBlock:^{
+        [self searchAllScrollViewsInView:application.keyWindow];
+    }];
     return YES;
 }
+
+#pragma mark - searchAllScrollViewsInView
+- (void)searchAllScrollViewsInView:(UIView *)view{
+    //如果不在keyWindow范围内 (不与window重叠),直接返回
+    if(![view ylq_coincideWithView:nil]) return;
+    //遍历所有子控件
+    for (UIView *subview in view.subviews) {
+        [self searchAllScrollViewsInView:subview];
+    }
+    //如果不是scrollView, 直接返回
+    if (![view isKindOfClass:[UIScrollView class]]) return;
+    
+    //滚动最后scrollView
+    UIScrollView *scrollView = (UIScrollView *)view;
+    //    CGPoint offset = scrollView.contentOffset;
+    //    offset.y = - scrollView.contentInset.top;
+    //    [scrollView setContentOffset:offset animated:YES];
+    [scrollView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

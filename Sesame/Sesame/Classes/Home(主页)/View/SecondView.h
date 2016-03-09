@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SecondViewDelegate <NSObject>
+
+- (void)fastJobButtonClick;
+- (void)miaoJobButtonClick;
+- (void)nearJobButtonClick;
+- (void)travelJobButtonClick;
+
+@end
 @interface SecondView : UIView
+
+/**delegate*/
+@property (nonatomic, strong) id<SecondViewDelegate> delegate;
 
 @end
