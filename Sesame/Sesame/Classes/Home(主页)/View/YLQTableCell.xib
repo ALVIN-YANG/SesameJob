@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="YLQTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_interesting" translatesAutoresizingMaskIntoConstraints="NO" id="QNW-aI-PMp">
+                        <rect key="frame" x="10" y="37" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="AAU-ay-FSj"/>
+                            <constraint firstAttribute="height" constant="50" id="L2v-G6-flb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="求职意向设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLP-ZP-le6">
+                        <rect key="frame" x="90" y="37" width="78" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刚刚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9P-C6-nO7">
+                        <rect key="frame" x="379" y="94" width="24" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.4784313738" green="0.55294120309999995" blue="0.57647061349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130元/天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chV-Qy-0V5">
+                        <rect key="frame" x="90" y="71" width="53" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.65635549319999997" blue="0.161231026" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="告诉我们你的兴趣, 给你想要的兼职" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-oA-BMr">
+                        <rect key="frame" x="90" y="56" width="156.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.4784313738" green="0.55294120309999995" blue="0.57647061349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="chV-Qy-0V5" firstAttribute="bottom" secondItem="QNW-aI-PMp" secondAttribute="bottom" id="7X6-7f-7HZ"/>
+                    <constraint firstItem="GLP-ZP-le6" firstAttribute="leading" secondItem="QNW-aI-PMp" secondAttribute="leading" id="7fu-5o-xDd"/>
+                    <constraint firstItem="NBE-oA-BMr" firstAttribute="leading" secondItem="GLP-ZP-le6" secondAttribute="leading" id="E9Q-HY-Hh8"/>
+                    <constraint firstItem="QNW-aI-PMp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="JHE-6f-vjl"/>
+                    <constraint firstAttribute="trailing" secondItem="QNW-aI-PMp" secondAttribute="trailing" constant="170" id="MiI-2d-Lvf"/>
+                    <constraint firstAttribute="bottom" secondItem="X9P-C6-nO7" secondAttribute="bottom" constant="15" id="RPI-TV-MzQ"/>
+                    <constraint firstItem="QNW-aI-PMp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="W1m-Td-6rB"/>
+                    <constraint firstItem="GLP-ZP-le6" firstAttribute="leading" secondItem="QNW-aI-PMp" secondAttribute="trailing" constant="30" id="a5J-fI-qfN"/>
+                    <constraint firstAttribute="bottom" secondItem="QNW-aI-PMp" secondAttribute="bottom" constant="20" id="eiu-jF-Ubz"/>
+                    <constraint firstItem="chV-Qy-0V5" firstAttribute="leading" secondItem="GLP-ZP-le6" secondAttribute="leading" id="gYQ-AU-CfH"/>
+                    <constraint firstAttribute="trailing" secondItem="X9P-C6-nO7" secondAttribute="trailing" constant="3" id="gdG-CF-4kR"/>
+                    <constraint firstItem="NBE-oA-BMr" firstAttribute="centerY" secondItem="QNW-aI-PMp" secondAttribute="centerY" id="hdc-ms-O5r"/>
+                    <constraint firstItem="GLP-ZP-le6" firstAttribute="top" secondItem="QNW-aI-PMp" secondAttribute="top" id="vQn-OI-vXH"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="JHE-6f-vjl"/>
+                        <exclude reference="MiI-2d-Lvf"/>
+                        <exclude reference="W1m-Td-6rB"/>
+                        <exclude reference="eiu-jF-Ubz"/>
+                        <exclude reference="7fu-5o-xDd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="QNW-aI-PMp" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="QGj-gN-YBn"/>
+                <constraint firstItem="QNW-aI-PMp" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="ufL-ew-Cwr"/>
+            </constraints>
+            <connections>
+                <outlet property="companyTitleLabel" destination="GLP-ZP-le6" id="ffa-S3-qtn"/>
+                <outlet property="detailsLabel" destination="NBE-oA-BMr" id="ll3-Ru-qf5"/>
+                <outlet property="iconImageView" destination="QNW-aI-PMp" id="BL3-Zb-V4q"/>
+                <outlet property="salaryLabel" destination="chV-Qy-0V5" id="Mfw-DR-yKi"/>
+                <outlet property="timeLabel" destination="X9P-C6-nO7" id="FZg-ti-5zz"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="298"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_interesting" width="40" height="40"/>
+    </resources>
+</document>

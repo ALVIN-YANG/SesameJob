@@ -1,0 +1,1 @@
+{"types":[{"title":"长期兼职(全职)","value":1},{"title":"短期兼职(临时工)","value":2},{"title":"周末兼职","value":3}]}

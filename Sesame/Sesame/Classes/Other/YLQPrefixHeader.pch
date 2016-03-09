@@ -1,0 +1,45 @@
+//
+//  YLQPrefixHeader.pch
+//  Sesame
+//
+//  Created by 杨卢青 on 16/3/8.
+//  Copyright © 2016年 杨卢青. All rights reserved.
+//
+
+
+#ifndef YLQPrefixHeader_pch
+#define YLQPrefixHeader_pch
+#import "UIView+Init.h"
+#import "UIView+Frame.h"
+#import "UIImage+Circle.h"
+#import "NSDate+Interval.h"
+#import "NSCalendar+Init.h"
+#import "Globol.h"
+#import "UIImage+Render.h"
+#import "UITextField+Placeholder.h"
+
+
+#endif /* YLQPrefixHeader_pch */
+/*****屏幕*******/
+#define YLQScreenW [UIScreen mainScreen].bounds.size.width
+#define YLQScreenH [UIScreen mainScreen].bounds.size.height
+#define iPhone4 (YLQScreenH == 480)
+#define iPhone5 (YLQScreenH == 568)
+#define iPhone6 (YLQScreenH == 667)
+#define iPhone6p (YLQScreenH == 736)
+
+
+#define YLQFunc YLQLog(@"%s",__func__)
+
+//颜色
+#define YLQColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1];
+#define YLQRandomColor YLQColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+/*自定义Log*/
+// 调试
+#ifdef DEBUG
+#define YLQLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布
+#define YLQLog(...)
+#endif

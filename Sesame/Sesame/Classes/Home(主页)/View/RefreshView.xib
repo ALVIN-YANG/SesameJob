@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RefreshView">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-tD-oXe">
+                    <rect key="frame" x="0.0" y="0.0" width="10" height="41"/>
+                    <color key="backgroundColor" red="0.85490196943283081" green="0.2330384516733188" blue="0.026803240660421723" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="5cP-uk-Jgc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你可能感兴趣的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwy-QW-pt8">
+                    <rect key="frame" x="30" y="12" width="98" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-iy-Ij9">
+                    <rect key="frame" x="272" y="5" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NpY-8Z-yIa"/>
+                        <constraint firstAttribute="height" constant="30" id="ndz-Ec-edT"/>
+                    </constraints>
+                    <state key="normal" image="update"/>
+                    <connections>
+                        <action selector="refreshButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="3kr-qc-Efv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8hC-iy-Ij9" secondAttribute="trailing" constant="8" id="49x-MS-Y80"/>
+                <constraint firstItem="Wwy-QW-pt8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9WN-Ew-NCj"/>
+                <constraint firstItem="bKK-tD-oXe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H0z-hC-cLu"/>
+                <constraint firstItem="Wwy-QW-pt8" firstAttribute="leading" secondItem="bKK-tD-oXe" secondAttribute="trailing" constant="20" id="KWD-V6-k1j"/>
+                <constraint firstItem="bKK-tD-oXe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rb1-1E-Ebv"/>
+                <constraint firstItem="8hC-iy-Ij9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="beB-Mf-GpY"/>
+                <constraint firstItem="bKK-tD-oXe" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="bt5-Ec-KB6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="417" y="174.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="update" width="30" height="30"/>
+    </resources>
+</document>
