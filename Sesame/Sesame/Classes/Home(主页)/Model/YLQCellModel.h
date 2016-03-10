@@ -10,4 +10,26 @@
 
 @interface YLQCellModel : NSObject
 
+
+
+/**begindate*/
+@property (nonatomic, assign) long begindate;
+/**enddate*/
+@property (nonatomic, assign) long enddate;
+/**distance*/
+@property (nonatomic, copy) NSString *distance;
+/**icon*/
+@property (nonatomic, copy) NSString *icon;
+/**jobtype*/
+@property (nonatomic, copy) NSString *jobtype;
+/**pageview*/
+@property (nonatomic, assign) NSInteger pageview;
+/**salary*/
+@property (nonatomic, assign) NSInteger salary;
+/**settlecircle*/
+@property (nonatomic, copy) NSString *settlecircle;
+/**settletype*/
+@property (nonatomic, copy) NSString *settletype;
+/**title*/
+@property (nonatomic, copy) NSString *title;
 @end

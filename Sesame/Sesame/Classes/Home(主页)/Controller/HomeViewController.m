@@ -15,8 +15,11 @@
 #import "YLQTableCell.h"
 #import "YLQRefreshHeader.h"
 #import "YLQRefreshFooter.h"
+#import "YLQHTTPSSessionManager.h"
 #import "FastJobViewController.h"
 #import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
 
 
 
@@ -27,6 +30,12 @@
 @property (nonatomic, weak) SecondView         * secondView;
 @property (nonatomic, weak) RefreshView        * refreshView;
 
+//请求管理者
+@property (nonatomic, strong) AFHTTPSessionManager *mgr;
+//数据:模型数组,  不断更新数据, 要可变数组
+@property (nonatomic, strong) NSMutableArray *itemArray;
+//maxtime
+@property (nonatomic, strong) NSString *maxtime;
 //footer
 @property (nonatomic, assign, getter=isHeaderRefreshing) BOOL headerRefreshing;
 //header
@@ -101,6 +110,13 @@ static NSString *const Mid = @"Mid";
     return _midScrollView;
 }
 
+- (AFHTTPSessionManager *)mgr{
+    if (!_mgr) {
+        _mgr = [AFHTTPSessionManager manager];
+    }
+    return _mgr;
+}
+
 #pragma mark - 时间监听
 - (void)tabBarButtonDidRepeatClick{
     //如果当前控制器View不在window上,直接返回
@@ -138,7 +154,25 @@ static NSString *const Mid = @"Mid";
 }
 
 - (void)loadNewJobMessage{
-    YLQLog(@"加载数据");
+    [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
+    //拼接parameters
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.mgr GET:@"http://capp.tanlu.cc/v130/job/detail?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22jobid%22%20:%2083515%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [responseObject writeToFile:@"/Users/YLQ/Desktop/SesameJob/detail.plist" atomically:YES];
+        [self.tableView reloadData];
+        
+        //结束刷新状态
+        [self.tableView.mj_header endRefreshing];
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        [self.tableView.mj_header endRefreshing];
+        //返回错误代码
+        if (error.code == NSURLErrorCancelled) return;
+        [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
+    }];
 }
 
 - (void)loadMoreJobMessage{
@@ -146,10 +180,8 @@ static NSString *const Mid = @"Mid";
 }
 
 #pragma mark - SecondViewDelegate
-- (void)fastJobButtonClick{
-    FastJobViewController *fastVC = [[FastJobViewController alloc] init];
-    [self.navigationController pushViewController:fastVC animated:YES];
-}
+
+
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -182,7 +214,9 @@ static NSString *const Mid = @"Mid";
         [midCell.contentView addSubview:_midScrollView];
         return midCell;
     }else{
+        
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        
         return cell;
     }
 }

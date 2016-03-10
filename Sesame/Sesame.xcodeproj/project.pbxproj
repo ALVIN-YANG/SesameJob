@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */; };
 		394C20E41C90609900A3A722 /* YLQCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E31C90609900A3A722 /* YLQCellModel.m */; };
 		394C20E81C9060D600A3A722 /* YLQTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E61C9060D600A3A722 /* YLQTableCell.m */; };
 		394C20E91C9060D600A3A722 /* YLQTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394C20E71C9060D600A3A722 /* YLQTableCell.xib */; };
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393F9BEC1C916F0A0027ACA8 /* YLQHTTPSSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQHTTPSSessionManager.h; sourceTree = "<group>"; };
+		393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQHTTPSSessionManager.m; sourceTree = "<group>"; };
 		394C20E21C90609900A3A722 /* YLQCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQCellModel.h; sourceTree = "<group>"; };
 		394C20E31C90609900A3A722 /* YLQCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQCellModel.m; sourceTree = "<group>"; };
 		394C20E51C9060D600A3A722 /* YLQTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTableCell.h; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 				398C63E41C8EBA5900C11C40 /* YLQTabBar.m */,
 				394C20F01C906EC000A3A722 /* YLQTopWindow.h */,
 				394C20F11C906EC000A3A722 /* YLQTopWindow.m */,
+				393F9BEC1C916F0A0027ACA8 /* YLQHTTPSSessionManager.h */,
+				393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -707,6 +712,7 @@
 				398C63F61C8EBB5900C11C40 /* UIView+Frame.m in Sources */,
 				39E73E621C57BD0D00E7B292 /* YLQNavigationController.m in Sources */,
 				39E73E6B1C57BE2800E7B292 /* MessageViewController.m in Sources */,
+				393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */,
 				394C20F51C9075D700A3A722 /* FastJobViewController.m in Sources */,
 				398C64031C8EEB4800C11C40 /* YLQScrollPage.m in Sources */,
 				39E73E651C57BD9200E7B292 /* HomeViewController.m in Sources */,

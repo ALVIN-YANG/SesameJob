@@ -1,0 +1,27 @@
+{
+	"status": 0,
+	"entity": {
+		"quick_check": 0,
+		"job_banner": [{
+			"banner_url": "http:\/\/img.jianzhimao.com\/message\/guochengliang\/1457000327197.jpg",
+			"title": "好声音",
+			"exclusive_id": 35,
+			"type": 1,
+			"list_banner_url": "http:\/\/img.jianzhimao.com\/message\/guochengliang\/1457000337853.jpg"
+		}, {
+			"banner_url": "http:\/\/img.jianzhimao.com\/message\/guochengliang\/1456903462166.jpg",
+			"title": "开学专场",
+			"exclusive_id": 34,
+			"type": 1,
+			"list_banner_url": "http:\/\/img.jianzhimao.com\/message\/guochengliang\/1456903475229.jpg"
+		}, {
+			"banner_url": "http:\/\/img.jianzhimao.com\/message\/yutyang\/1452571255787.jpg",
+			"title": "智由如你",
+			"exclusive_id": 30,
+			"type": 1,
+			"list_banner_url": "http:\/\/img.jianzhimao.com\/message\/yutyang\/1452571265903.jpg"
+		}],
+		"layout_option": 138
+	},
+	"msg": "请求成功"
+}

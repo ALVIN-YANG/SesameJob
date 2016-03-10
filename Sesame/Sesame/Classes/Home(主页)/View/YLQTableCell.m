@@ -14,12 +14,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *companyTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *salaryLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *circleType;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceTypeLabel;
 
 @end
 @implementation YLQTableCell
 
 - (void)awakeFromNib {
+    
     
 }
 

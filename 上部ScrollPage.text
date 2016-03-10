@@ -1,0 +1,33 @@
+{
+	"status": 0,
+	"list": [{
+		"id": 457,
+		"remark": "卖座网4",
+		"path": "http:\/\/jianzhimao.oss-cn-hangzhou.aliyuncs.com\/jzmao\/ffads\/",
+		"img": "zyuwei_1457405835103.jpg",
+		"urlState": 1,
+		"url": "http:\/\/cps.maizuo.com\/changeUrl.htm?channelId=254&urlId=554"
+	}, {
+		"id": 458,
+		"remark": "录用分奖",
+		"path": "http:\/\/jianzhimao.oss-cn-hangzhou.aliyuncs.com\/jzmao\/ffads\/",
+		"img": "zyuwei_1457058162981.jpg",
+		"urlState": 1,
+		"url": "http:\/\/mp.weixin.qq.com\/s?__biz=MzA4NzY3OTAxNg==&mid=401971824&idx=1&sn=c281bbb370e32d7209082d3cf6bfa7c1#rd"
+	}, {
+		"id": 469,
+		"remark": "卖座网广州",
+		"path": "http:\/\/jianzhimao.oss-cn-hangzhou.aliyuncs.com\/jzmao\/ffads\/",
+		"img": "zyuwei_1457441920484.jpg",
+		"urlState": 5,
+		"url": "843418"
+	}, {
+		"id": 284,
+		"remark": "实名认证",
+		"path": "http:\/\/jianzhimao.oss-cn-hangzhou.aliyuncs.com\/jzmao\/ffads\/",
+		"img": "yutyang_1448941752297.jpg",
+		"urlState": 7,
+		"url": ""
+	}],
+	"msg": "请求成功"
+}

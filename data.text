@@ -1,0 +1,42 @@
+http://capp.tanlu.cc/v130/job/listByHome?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22cityid%22%20:%20%2291%22,%0A%20%20%22lo%22%20:%20%22113.380893%22,%0A%20%20%22cityname%22%20:%20%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22la%22%20:%20%2223.142513%22,%0A%20%20%22page%22%20:%201%0A%7D
+
+
+title: String           校园代理
+
+distance: String 		23.4千米
+
+jobtype: String 		校园代理
+
+settle type: String 		元/小时
+
+settle circle: 	String		月结
+
+salary: Integer			13  元/小时(settle type)
+
+
+begin date: long		1456848000000
+
+endnote  :long			1458576000000
+
+pageview : Integer		581    (xxx人浏览 / 23.4千米)
+
+
+2
+http://capp.tanlu.cc/v130/job/listByHome?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22cityid%22%20:%20%2291%22,%0A%20%20%22lo%22%20:%20%22113.380893%22,%0A%20%20%22cityname%22%20:%20%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22la%22%20:%20%2223.142513%22,%0A%20%20%22page%22%20:%202%0A%7D
+
+
+
+—
+
+金牌职位:  WebView : http://m.tanlu.cc/job/themesList?themeId=865&source=app&tla=23.142228&tlo=113.381053
+
+日结专区:		
+http://m.tanlu.cc/job/themesList?themeId=938&source=app&tla=23.142228&tlo=113.381053
+
+
+
+detail:
+http://capp.tanlu.cc/v130/job/detail?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22jobid%22%20:%2083515%0A%7D
+
+
+
