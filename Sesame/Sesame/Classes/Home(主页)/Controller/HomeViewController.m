@@ -20,6 +20,7 @@
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
+#import <MJExtension.h>
 
 
 
@@ -157,9 +158,10 @@ static NSString *const Mid = @"Mid";
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
     //拼接parameters
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    [self.mgr GET:@"http://capp.tanlu.cc/v130/job/detail?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22jobid%22%20:%2083515%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.mgr GET:@"http://capp.tanlu.cc/v130/job/listByHome?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22cityid%22%20:%20%2291%22,%0A%20%20%22lo%22%20:%20%22113.380893%22,%0A%20%20%22cityname%22%20:%20%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22la%22%20:%20%2223.142513%22,%0A%20%20%22page%22%20:%201%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        [responseObject writeToFile:@"/Users/YLQ/Desktop/SesameJob/detail.plist" atomically:YES];
+//        [responseObject writeToFile:@"/Users/YLQ/Desktop/SesameJob/detail.plist" atomically:YES];
+        self.itemArray = [YLQCellModel mj_objectArrayWithKeyValuesArray:responseObject[@"jobs"]];
         [self.tableView reloadData];
         
         //结束刷新状态
@@ -215,8 +217,8 @@ static NSString *const Mid = @"Mid";
         return midCell;
     }else{
         
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-        
+        YLQTableCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        cell.cellModel = self.itemArray[indexPath.row];
         return cell;
     }
 }

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class YLQCellModel;
 @interface YLQHomeTableView : UITableViewController
-
+@property (nonatomic, weak) YLQCellModel *cellModel;
 @end

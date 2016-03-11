@@ -8,6 +8,8 @@
 
 #import "YLQHomeTableView.h"
 #import "RefreshView.h"
+#import "YLQCellModel.h"
+
 @interface YLQHomeTableView ()<UITableViewDataSource>
 @property (nonatomic, weak) RefreshView *refreshView;
 @end
