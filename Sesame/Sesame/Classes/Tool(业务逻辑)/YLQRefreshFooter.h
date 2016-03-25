@@ -8,6 +8,6 @@
 
 #import <MJRefresh/MJRefresh.h>
 
-@interface YLQRefreshFooter : MJRefreshAutoFooter
+@interface YLQRefreshFooter : MJRefreshAutoNormalFooter
 
 @end

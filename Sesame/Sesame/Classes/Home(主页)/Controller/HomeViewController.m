@@ -12,11 +12,13 @@
 #import "RefreshView.h"
 #import "YLQHomeTableView.h"
 #import "YLQCellModel.h"
+#import "YLQDetailModel.h"
 #import "YLQTableCell.h"
 #import "YLQRefreshHeader.h"
 #import "YLQRefreshFooter.h"
 #import "YLQHTTPSSessionManager.h"
 #import "FastJobViewController.h"
+#import "DetailJobMessageController.h"
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
@@ -31,10 +33,13 @@
 @property (nonatomic, weak) SecondView         * secondView;
 @property (nonatomic, weak) RefreshView        * refreshView;
 
+@property (nonatomic, strong) DetailJobMessageController *DetailVC;
 //请求管理者
 @property (nonatomic, strong) AFHTTPSessionManager *mgr;
 //数据:模型数组,  不断更新数据, 要可变数组
 @property (nonatomic, strong) NSMutableArray *itemArray;
+// detailArray
+@property (nonatomic, strong) NSMutableDictionary *detailArray;
 //maxtime
 @property (nonatomic, strong) NSString *maxtime;
 //footer
@@ -67,6 +72,7 @@ static NSString *const Mid = @"Mid";
     if (!_secondView) {
         _secondView = [SecondView ylq_viewFromXib];
         _secondView.frame = CGRectMake(0, 0, YLQScreenW, 150);
+        _secondView.delegate = self;
     }
     return _secondView;
 }
@@ -140,6 +146,7 @@ static NSString *const Mid = @"Mid";
 - (void)setupTableView{
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([YLQTableCell class]) bundle:nil] forCellReuseIdentifier:ID];
 
 }
@@ -157,8 +164,8 @@ static NSString *const Mid = @"Mid";
 - (void)loadNewJobMessage{
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
     //拼接parameters
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    [self.mgr GET:@"http://capp.tanlu.cc/v130/job/listByHome?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22cityid%22%20:%20%2291%22,%0A%20%20%22lo%22%20:%20%22113.380893%22,%0A%20%20%22cityname%22%20:%20%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22la%22%20:%20%2223.142513%22,%0A%20%20%22page%22%20:%201%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    [self.mgr GET:@"http://capp.tanlu.cc/v140/job/listByHome?v=1.4.2&userid=579032&token=061cb5c89e70e4334233036bfe83454a&data=%7B%0A%20%20%22cityid%22%20:%20%2228%22,%0A%20%20%22sort%22%20:%20%22%22,%0A%20%20%22lo%22%20:%20%22116.450111%22,%0A%20%20%22cityname%22%20:%20%22%E5%8C%97%E4%BA%AC%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22settlecircleid%22%20:%20%22%22,%0A%20%20%22la%22%20:%20%2239.927669%22,%0A%20%20%22page%22%20:%201,%0A%20%20%22jobtypeid%22%20:%20%22%22%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
 //        [responseObject writeToFile:@"/Users/YLQ/Desktop/SesameJob/detail.plist" atomically:YES];
         self.itemArray = [YLQCellModel mj_objectArrayWithKeyValuesArray:responseObject[@"jobs"]];
@@ -177,13 +184,51 @@ static NSString *const Mid = @"Mid";
     }];
 }
 
+
 - (void)loadMoreJobMessage{
     YLQLog(@"加载新数据");
+    [self.mgr GET:@"http://capp.tanlu.cc/v140/job/listByHome?v=1.4.2&userid=579032&token=061cb5c89e70e4334233036bfe83454a&data=%7B%0A%20%20%22cityid%22%20:%20%2228%22,%0A%20%20%22sort%22%20:%20%22%22,%0A%20%20%22lo%22%20:%20%22116.450111%22,%0A%20%20%22cityname%22%20:%20%22%E5%8C%97%E4%BA%AC%E5%B8%82%22,%0A%20%20%22workdates%22%20:%20%5B%0A%0A%20%20%5D,%0A%20%20%22size%22%20:%20%2220%22,%0A%20%20%22settlecircleid%22%20:%20%22%22,%0A%20%20%22la%22%20:%20%2239.927669%22,%0A%20%20%22page%22%20:%201,%0A%20%20%22jobtypeid%22%20:%20%22%22%0A%7D" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        //        [responseObject writeToFile:@"/Users/YLQ/Desktop/SesameJob/detail.plist" atomically:YES];
+        //加载新数据,  拼接到旧数据
+        NSArray *moreData = [YLQCellModel mj_objectArrayWithKeyValuesArray:responseObject[@"jobs"]];
+        [self.itemArray addObjectsFromArray:moreData];
+        [self.tableView reloadData];
+        
+        //结束刷新状态
+        [self.tableView.mj_footer endRefreshing];
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        [self.tableView.mj_header endRefreshing];
+        //返回错误代码
+        if (error.code == NSURLErrorCancelled) return;
+        [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
+    }];
 }
 
 #pragma mark - SecondViewDelegate
+- (void)fastJobButtonClick
+{
+    NSLog(@"点击了第一个Button");
+    [self.navigationController pushViewController:[[FastJobViewController alloc]init] animated:YES];
+}
 
+- (void)miaoJobButtonClick
+{
+    NSLog(@"点击了第二个Button");
+}
 
+- (void)nearJobButtonClick
+{
+    NSLog(@"点击了第三个Button");
+}
+
+- (void)travelJobButtonClick
+{
+    NSLog(@"点击了第四个Button");
+}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -192,7 +237,7 @@ static NSString *const Mid = @"Mid";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 3 ) {
-        return 15;
+        return self.itemArray.count;
     }else return 1;
 }
 //cell
@@ -254,6 +299,35 @@ static NSString *const Mid = @"Mid";
     }else{
         return 80;
     }
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([DetailJobMessageController class]) bundle:nil];
+    DetailJobMessageController *DetailVC = [storyBoard instantiateInitialViewController];
+    //加载职位详情页面数据
+    NSString *str = @"http://capp.tanlu.cc/v140/job/detail?v=1.4.2&userid=579032&token=061cb5c89e70e4334233036bfe83454a&data=%7B%0A%20%20%22jobid%22%20:%2089891%0A%7D";
+    str = [str stringByReplacingOccurrencesOfString:@"2089891" withString:[NSString stringWithFormat:@"%zd", 2089891 + indexPath.row]];
+
+    [self.mgr GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"%@", responseObject);
+        DetailVC.model = [YLQDetailModel mj_objectWithKeyValues:responseObject[@"jobdetail"]];
+//        NSLog(@"%@", self.detailArray);
+//        NSLog(@"%@", DetailVC.model);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //返回错误代码
+        if (error.code == NSURLErrorCancelled) return;
+        [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
+    }];
+//    self.DetailVC = DetailVC;
+    [self.navigationController pushViewController:DetailVC animated:YES];
+}
+
+#pragma mark - ScrollPageDelegate
+- (void)infiniteScrollView:(YLQScrollPage *)scrollView didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"%zd", index);
 }
 
 @end

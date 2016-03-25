@@ -15,6 +15,9 @@
 		394C20EF1C906CB800A3A722 /* YLQRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20EE1C906CB800A3A722 /* YLQRefreshFooter.m */; };
 		394C20F21C906EC000A3A722 /* YLQTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20F11C906EC000A3A722 /* YLQTopWindow.m */; };
 		394C20F51C9075D700A3A722 /* FastJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20F41C9075D700A3A722 /* FastJobViewController.m */; };
+		397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A3D1CA502800034973A /* DetailJobMessageController.m */; };
+		397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397C2A451CA512360034973A /* DetailJobMessageController.storyboard */; };
+		397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A481CA51ADB0034973A /* YLQDetailModel.m */; };
 		398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E41C8EBA5900C11C40 /* YLQTabBar.m */; };
 		398C63F21C8EBB5900C11C40 /* Globol.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E71C8EBB5900C11C40 /* Globol.m */; };
 		398C63F31C8EBB5900C11C40 /* NSCalendar+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E91C8EBB5900C11C40 /* NSCalendar+Init.m */; };
@@ -79,6 +82,11 @@
 		394C20F11C906EC000A3A722 /* YLQTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTopWindow.m; sourceTree = "<group>"; };
 		394C20F31C9075D700A3A722 /* FastJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastJobViewController.h; sourceTree = "<group>"; };
 		394C20F41C9075D700A3A722 /* FastJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastJobViewController.m; sourceTree = "<group>"; };
+		397C2A3C1CA502800034973A /* DetailJobMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailJobMessageController.h; sourceTree = "<group>"; };
+		397C2A3D1CA502800034973A /* DetailJobMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailJobMessageController.m; sourceTree = "<group>"; };
+		397C2A451CA512360034973A /* DetailJobMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailJobMessageController.storyboard; sourceTree = "<group>"; };
+		397C2A471CA51ADB0034973A /* YLQDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQDetailModel.h; sourceTree = "<group>"; };
+		397C2A481CA51ADB0034973A /* YLQDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQDetailModel.m; sourceTree = "<group>"; };
 		398C63E31C8EBA5900C11C40 /* YLQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTabBar.h; sourceTree = "<group>"; };
 		398C63E41C8EBA5900C11C40 /* YLQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTabBar.m; sourceTree = "<group>"; };
 		398C63E61C8EBB5900C11C40 /* Globol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globol.h; sourceTree = "<group>"; };
@@ -257,6 +265,9 @@
 				39E73E641C57BD9200E7B292 /* HomeViewController.m */,
 				394C20F31C9075D700A3A722 /* FastJobViewController.h */,
 				394C20F41C9075D700A3A722 /* FastJobViewController.m */,
+				397C2A3C1CA502800034973A /* DetailJobMessageController.h */,
+				397C2A3D1CA502800034973A /* DetailJobMessageController.m */,
+				397C2A451CA512360034973A /* DetailJobMessageController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +277,8 @@
 			children = (
 				394C20E21C90609900A3A722 /* YLQCellModel.h */,
 				394C20E31C90609900A3A722 /* YLQCellModel.m */,
+				397C2A471CA51ADB0034973A /* YLQDetailModel.h */,
+				397C2A481CA51ADB0034973A /* YLQDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				398C64561C8FCF4700C11C40 /* YLQHomeTableView.storyboard in Resources */,
+				397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */,
 				398C64051C8EF6D500C11C40 /* SecondView.xib in Resources */,
 				39E73E1C1C57B69F00E7B292 /* LaunchScreen.storyboard in Resources */,
 				398C640D1C8F119F00C11C40 /* RefreshView.xib in Resources */,
@@ -704,6 +718,7 @@
 				398C63F31C8EBB5900C11C40 /* NSCalendar+Init.m in Sources */,
 				398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */,
 				39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */,
+				397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */,
 				398C63FB1C8EC7A000C11C40 /* UIImage+Render.m in Sources */,
 				39E73E5F1C57BCEB00E7B292 /* YLQTabBarController.m in Sources */,
 				398C63F51C8EBB5900C11C40 /* UIImage+Circle.m in Sources */,
@@ -714,6 +729,7 @@
 				39E73E6B1C57BE2800E7B292 /* MessageViewController.m in Sources */,
 				393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */,
 				394C20F51C9075D700A3A722 /* FastJobViewController.m in Sources */,
+				397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */,
 				398C64031C8EEB4800C11C40 /* YLQScrollPage.m in Sources */,
 				39E73E651C57BD9200E7B292 /* HomeViewController.m in Sources */,
 				398C64101C8F2BEC00C11C40 /* YLQHomeTableView.m in Sources */,
