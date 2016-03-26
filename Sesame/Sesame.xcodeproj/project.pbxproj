@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86B71CA6776300B76AB2 /* DetailTableViewController.m */; };
 		393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */; };
 		394C20E41C90609900A3A722 /* YLQCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E31C90609900A3A722 /* YLQCellModel.m */; };
 		394C20E81C9060D600A3A722 /* YLQTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E61C9060D600A3A722 /* YLQTableCell.m */; };
@@ -18,6 +19,7 @@
 		397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A3D1CA502800034973A /* DetailJobMessageController.m */; };
 		397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397C2A451CA512360034973A /* DetailJobMessageController.storyboard */; };
 		397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A481CA51ADB0034973A /* YLQDetailModel.m */; };
+		397C2A4C1CA64CC10034973A /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A4B1CA64CC10034973A /* UIBarButtonItem+Item.m */; };
 		398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E41C8EBA5900C11C40 /* YLQTabBar.m */; };
 		398C63F21C8EBB5900C11C40 /* Globol.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E71C8EBB5900C11C40 /* Globol.m */; };
 		398C63F31C8EBB5900C11C40 /* NSCalendar+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 398C63E91C8EBB5900C11C40 /* NSCalendar+Init.m */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393C86B61CA6776300B76AB2 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		393C86B71CA6776300B76AB2 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		393F9BEC1C916F0A0027ACA8 /* YLQHTTPSSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQHTTPSSessionManager.h; sourceTree = "<group>"; };
 		393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQHTTPSSessionManager.m; sourceTree = "<group>"; };
 		394C20E21C90609900A3A722 /* YLQCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQCellModel.h; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		397C2A451CA512360034973A /* DetailJobMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailJobMessageController.storyboard; sourceTree = "<group>"; };
 		397C2A471CA51ADB0034973A /* YLQDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQDetailModel.h; sourceTree = "<group>"; };
 		397C2A481CA51ADB0034973A /* YLQDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQDetailModel.m; sourceTree = "<group>"; };
+		397C2A4A1CA64CC10034973A /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		397C2A4B1CA64CC10034973A /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		398C63E31C8EBA5900C11C40 /* YLQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTabBar.h; sourceTree = "<group>"; };
 		398C63E41C8EBA5900C11C40 /* YLQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTabBar.m; sourceTree = "<group>"; };
 		398C63E61C8EBB5900C11C40 /* Globol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globol.h; sourceTree = "<group>"; };
@@ -268,6 +274,8 @@
 				397C2A3C1CA502800034973A /* DetailJobMessageController.h */,
 				397C2A3D1CA502800034973A /* DetailJobMessageController.m */,
 				397C2A451CA512360034973A /* DetailJobMessageController.storyboard */,
+				393C86B61CA6776300B76AB2 /* DetailTableViewController.h */,
+				393C86B71CA6776300B76AB2 /* DetailTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -446,6 +454,8 @@
 				398C63EF1C8EBB5900C11C40 /* UIView+Frame.m */,
 				398C63F01C8EBB5900C11C40 /* UIView+Init.h */,
 				398C63F11C8EBB5900C11C40 /* UIView+Init.m */,
+				397C2A4A1CA64CC10034973A /* UIBarButtonItem+Item.h */,
+				397C2A4B1CA64CC10034973A /* UIBarButtonItem+Item.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -719,6 +729,7 @@
 				398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */,
 				39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */,
 				397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */,
+				393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */,
 				398C63FB1C8EC7A000C11C40 /* UIImage+Render.m in Sources */,
 				39E73E5F1C57BCEB00E7B292 /* YLQTabBarController.m in Sources */,
 				398C63F51C8EBB5900C11C40 /* UIImage+Circle.m in Sources */,
@@ -727,6 +738,7 @@
 				398C63F61C8EBB5900C11C40 /* UIView+Frame.m in Sources */,
 				39E73E621C57BD0D00E7B292 /* YLQNavigationController.m in Sources */,
 				39E73E6B1C57BE2800E7B292 /* MessageViewController.m in Sources */,
+				397C2A4C1CA64CC10034973A /* UIBarButtonItem+Item.m in Sources */,
 				393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */,
 				394C20F51C9075D700A3A722 /* FastJobViewController.m in Sources */,
 				397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */,

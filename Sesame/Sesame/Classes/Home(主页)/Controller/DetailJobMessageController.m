@@ -9,15 +9,13 @@
 #import "DetailJobMessageController.h"
 #import <UIImageView+WebCache.h>
 #import "YLQDetailModel.h"
+#import <Masonry.h>
+#import "DetailTableViewController.h"
 
-@interface DetailJobMessageController ()
-@property (weak, nonatomic) IBOutlet UILabel *titleLable;
-@property (weak, nonatomic) IBOutlet UILabel *needCountLabel;
-@property (weak, nonatomic) IBOutlet UILabel *salaryLabel;
-@property (weak, nonatomic) IBOutlet UILabel *settletypeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *areaLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+@interface DetailJobMessageController ()<DetailTableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
+@property (nonatomic, weak) DetailTableViewController *detailVC;
 @end
 
 @implementation DetailJobMessageController
@@ -25,22 +23,35 @@
 #pragma mark - 重写数据set
 - (void)setModel:(YLQDetailModel *)model {
     _model = model;
-    self.titleLable.text = model.title;
-    self.needCountLabel.text = [NSString stringWithFormat:@"招聘%@人", model.needcount];
-    self.salaryLabel.text = model.salary;
-    self.settletypeLabel.text = model.settletype;
-    self.areaLabel.text = model.area;
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"DetailSegue"]) {
+        DetailTableViewController *detailVC = [segue destinationViewController];
+        detailVC.delegate = self;
+    }
+}
+
+- (void)loadDataModelToView:(DetailTableViewController *)detailVC{
+    self.detailVC = detailVC;
+    detailVC.model = _model;
+}
+
+- (void)awakeFromNib{
+    
+//
+//        _bottomView = bottomView;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"职位详情";
-    //设置tableview的cell 间距 设置为10
-    self.tableView.sectionFooterHeight = 10;
-    self.tableView.sectionHeaderHeight = 0;
-    //上面的间隔是tableview造成的 35 ,所以设置其contentInset
-    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
-    
+    DetailTableViewController *detailVC = [[DetailTableViewController alloc] initWithNibName:NSStringFromClass([DetailTableViewController class]) bundle:nil];
+    self.detailVC = detailVC;
+    detailVC.model = self.model;
+//    [self.containerView addSubview:detailVC.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +60,18 @@
 }
 
 #pragma mark - Table view data source
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return CGFLOAT_MIN;
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section) {
+        return 30;
+    }
+    return CGFLOAT_MIN;
+}
+
+#pragma mark - TableViewDelegate
 
 
 @end

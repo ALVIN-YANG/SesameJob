@@ -8,30 +8,59 @@
 
 #import "YLQNavigationController.h"
 
-@interface YLQNavigationController ()
+@interface YLQNavigationController()<UIGestureRecognizerDelegate>
 
 @end
 
 @implementation YLQNavigationController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark - load
++ (void)load{
+    UINavigationBar *navigationBar = [UINavigationBar appearanceWhenContainedIn:self, nil];
+    NSMutableDictionary *titleAtrr = [NSMutableDictionary dictionary];
+    titleAtrr[NSFontAttributeName] = [UIFont systemFontOfSize:20];
+    [navigationBar setTitleTextAttributes:titleAtrr];
+    
+    [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+#pragma mark - viewDidload
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+ <UIScreenEdgePanGestureRecognizer: 0x7fcf9bc7b3d0; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7fcf9bc6f120>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7fcf9bc7afc0>)>>
+ */
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    //拿到系统调用手势的target
+    id target = self.interactivePopGestureRecognizer.delegate;
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    pan.delegate = self;
+    [self.view addGestureRecognizer:pan];
+    //    self.interactivePopGestureRecognizer.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
+    //    YLQLog(@"%@", self.interactivePopGestureRecognizer);
 }
-*/
 
+#pragma mark - push
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    //要判断是不是根控制器,  viewController
+    
+    if (self.childViewControllers.count > 0) {
+        //不是跟控制器就隐藏底部条
+        viewController.hidesBottomBarWhenPushed = YES;
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(back) title:@"返回"];
+    }
+    //调用父类的push
+    [super pushViewController:viewController animated:animated];
+}
+
+- (void)back{
+    [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - GestureDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    //    return self.childViewControllers.count > 0;
+    
+    
+    return self.childViewControllers.count > 1;
+}
 @end
+

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class YLQDetailModel;
-@interface DetailJobMessageController : UITableViewController
+@interface DetailJobMessageController : UIViewController
 /**data*/
 @property (nonatomic, strong) YLQDetailModel *model;
 @end

@@ -311,17 +311,14 @@ static NSString *const Mid = @"Mid";
     str = [str stringByReplacingOccurrencesOfString:@"2089891" withString:[NSString stringWithFormat:@"%zd", 2089891 + indexPath.row]];
 
     [self.mgr GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"%@", responseObject);
         DetailVC.model = [YLQDetailModel mj_objectWithKeyValues:responseObject[@"jobdetail"]];
-//        NSLog(@"%@", self.detailArray);
-//        NSLog(@"%@", DetailVC.model);
+        [self.navigationController pushViewController:DetailVC animated:YES];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //返回错误代码
         if (error.code == NSURLErrorCancelled) return;
         [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
     }];
-//    self.DetailVC = DetailVC;
-    [self.navigationController pushViewController:DetailVC animated:YES];
+    
 }
 
 #pragma mark - ScrollPageDelegate

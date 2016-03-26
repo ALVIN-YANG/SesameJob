@@ -32,4 +32,5 @@
 @property (nonatomic, copy) NSString *settletype;
 /**title*/
 @property (nonatomic, copy) NSString *title;
+
 @end
