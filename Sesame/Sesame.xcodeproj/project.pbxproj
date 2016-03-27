@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86B71CA6776300B76AB2 /* DetailTableViewController.m */; };
+		393C86C11CA7F39800B76AB2 /* TravelJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86BF1CA7F39800B76AB2 /* TravelJobController.m */; };
+		393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393C86C31CA802F700B76AB2 /* TravelJobController.storyboard */; };
+		393C86C71CA822CC00B76AB2 /* MiaoJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86C61CA822CC00B76AB2 /* MiaoJobController.m */; };
+		393C86C91CA822DC00B76AB2 /* MiaoJobController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393C86C81CA822DC00B76AB2 /* MiaoJobController.storyboard */; };
 		393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */; };
 		394C20E41C90609900A3A722 /* YLQCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E31C90609900A3A722 /* YLQCellModel.m */; };
 		394C20E81C9060D600A3A722 /* YLQTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E61C9060D600A3A722 /* YLQTableCell.m */; };
@@ -71,6 +75,12 @@
 /* Begin PBXFileReference section */
 		393C86B61CA6776300B76AB2 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		393C86B71CA6776300B76AB2 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		393C86BE1CA7F39800B76AB2 /* TravelJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelJobController.h; sourceTree = "<group>"; };
+		393C86BF1CA7F39800B76AB2 /* TravelJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelJobController.m; sourceTree = "<group>"; };
+		393C86C31CA802F700B76AB2 /* TravelJobController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TravelJobController.storyboard; sourceTree = "<group>"; };
+		393C86C51CA822CC00B76AB2 /* MiaoJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiaoJobController.h; sourceTree = "<group>"; };
+		393C86C61CA822CC00B76AB2 /* MiaoJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiaoJobController.m; sourceTree = "<group>"; };
+		393C86C81CA822DC00B76AB2 /* MiaoJobController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MiaoJobController.storyboard; sourceTree = "<group>"; };
 		393F9BEC1C916F0A0027ACA8 /* YLQHTTPSSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQHTTPSSessionManager.h; sourceTree = "<group>"; };
 		393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQHTTPSSessionManager.m; sourceTree = "<group>"; };
 		394C20E21C90609900A3A722 /* YLQCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQCellModel.h; sourceTree = "<group>"; };
@@ -308,6 +318,12 @@
 				394C20E51C9060D600A3A722 /* YLQTableCell.h */,
 				394C20E61C9060D600A3A722 /* YLQTableCell.m */,
 				394C20E71C9060D600A3A722 /* YLQTableCell.xib */,
+				393C86C51CA822CC00B76AB2 /* MiaoJobController.h */,
+				393C86C61CA822CC00B76AB2 /* MiaoJobController.m */,
+				393C86C81CA822DC00B76AB2 /* MiaoJobController.storyboard */,
+				393C86BE1CA7F39800B76AB2 /* TravelJobController.h */,
+				393C86BF1CA7F39800B76AB2 /* TravelJobController.m */,
+				393C86C31CA802F700B76AB2 /* TravelJobController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +652,8 @@
 			files = (
 				398C64561C8FCF4700C11C40 /* YLQHomeTableView.storyboard in Resources */,
 				397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */,
+				393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */,
+				393C86C91CA822DC00B76AB2 /* MiaoJobController.storyboard in Resources */,
 				398C64051C8EF6D500C11C40 /* SecondView.xib in Resources */,
 				39E73E1C1C57B69F00E7B292 /* LaunchScreen.storyboard in Resources */,
 				398C640D1C8F119F00C11C40 /* RefreshView.xib in Resources */,
@@ -726,9 +744,11 @@
 				398C640B1C8F118F00C11C40 /* RefreshView.m in Sources */,
 				394C20EF1C906CB800A3A722 /* YLQRefreshFooter.m in Sources */,
 				398C63F31C8EBB5900C11C40 /* NSCalendar+Init.m in Sources */,
+				393C86C71CA822CC00B76AB2 /* MiaoJobController.m in Sources */,
 				398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */,
 				39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */,
 				397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */,
+				393C86C11CA7F39800B76AB2 /* TravelJobController.m in Sources */,
 				393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */,
 				398C63FB1C8EC7A000C11C40 /* UIImage+Render.m in Sources */,
 				39E73E5F1C57BCEB00E7B292 /* YLQTabBarController.m in Sources */,

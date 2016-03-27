@@ -28,15 +28,18 @@ http://capp.tanlu.cc/v130/job/listByHome?v=1.4.0&userid=&token=&data=%7B%0A%20%2
 
 —
 
-金牌职位:  WebView : http://m.tanlu.cc/job/themesList?themeId=865&source=app&tla=23.142228&tlo=113.381053
-
+金牌职位:  WebView : http://m.tanlu.cc/job/themesList?themeId=905&source=app&tla=39.927669&tlo=116.450111&source=ios
 日结专区:		
-http://m.tanlu.cc/job/themesList?themeId=938&source=app&tla=23.142228&tlo=113.381053
+http://m.tanlu.cc/job/themesList?themeId=904&source=app&tla=39.927669&tlo=116.450111&source=ios
 
+微任务:
+http://m.tanlu.cc/job/themesList?themeId=911&source=app&tla=39.927669&tlo=116.450111&source=ios
 
 
 detail:
 http://capp.tanlu.cc/v130/job/detail?v=1.4.0&userid=&token=&data=%7B%0A%20%20%22jobid%22%20:%2083515%0A%7D
+
+
 
 
 

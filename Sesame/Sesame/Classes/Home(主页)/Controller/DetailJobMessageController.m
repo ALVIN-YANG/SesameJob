@@ -54,24 +54,4 @@
 //    [self.containerView addSubview:detailVC.view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return CGFLOAT_MIN;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section) {
-        return 30;
-    }
-    return CGFLOAT_MIN;
-}
-
-#pragma mark - TableViewDelegate
-
-
 @end

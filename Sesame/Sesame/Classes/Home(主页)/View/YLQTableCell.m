@@ -22,11 +22,6 @@
 @end
 @implementation YLQTableCell
 
-- (void)awakeFromNib {
-    
-    
-}
-
 #pragma mark - 重写set加载数据
 - (void)setCellModel:(YLQCellModel *)cellModel{
     _cellModel = cellModel;

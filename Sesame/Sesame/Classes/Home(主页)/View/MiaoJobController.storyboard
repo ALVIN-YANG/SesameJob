@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LCi-LX-3eP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Miao Job Controller-->
+        <scene sceneID="1xT-D5-EFy">
+            <objects>
+                <viewController id="LCi-LX-3eP" customClass="MiaoJobController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="89E-bX-qHm"/>
+                        <viewControllerLayoutGuide type="bottom" id="4VQ-dR-DaW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IZK-da-76r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-2Q-TL2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhu-Ha-S8c">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1507"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jobimage" translatesAutoresizingMaskIntoConstraints="NO" id="vmi-0E-m9U">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="FTL-Ls-RSh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtE-pU-t5L">
+                                                <rect key="frame" x="10" y="170" width="355" height="152"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="现在的大学生除了学习之外，更加注重的是实习经验，那么找兼职必然成为其中一种首当其冲的方法。而现在的兼职行业尚未规范，相对杂乱且不安全，如何防止被骗是一个很重要的环节。于是贴心的芝麻兼职特意为你们准备了一份防骗指南，希望能帮到有需要的人。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.16862745583057404" green="0.18823529779911041" blue="0.18823529779911041" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="3" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示：兼职猫为你整理兼职防骗指南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjW-OQ-wea">
+                                                <rect key="frame" x="10" y="337" width="234" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.90196079015731812" green="0.3490196168422699" blue="0.3490196168422699" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI7-Nr-31p">
+                                                <rect key="frame" x="10" y="368" width="355" height="22.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="指南一: 防黑中介">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.10980392247438431" green="0.14117647707462311" blue="0.14509804546833038" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcd-vO-Va4">
+                                                <rect key="frame" x="10" y="390" width="355" height="336"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">        兼职攻略首要一条就是要“防黑中介”！黑中介往往都想打着诱人的条件作为吸引，等你去到就各种名目的费用层出不穷，良心一点的骗个200，狠的甚至骗个2000都有。而其中惯用的手法就是先提供兼职工作信息或根本不提供任何兼职岗位!在求职者发觉上当受骗后，往往利用学生维权意识薄弱的心理，采取欺骗、拖延、推诿、威胁(甚至频繁更换公司名称和办公地址)的手段，迫使学生妥协放弃投诉!那找兼职的时候，要防黑中介，得注意以下关键词：“培训费”、“拍照费”、“保险费”、“抵押金”、“服装费”、“档案管理费”、“保证金”、“风险金”、“报名费”、“公关排号费”、“办证费”、“手工材料费”、“高薪兼职”、“100%安排工作”、“不用面试直接上岗”。</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <font key="NSFont" size="13" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-G2-857">
+                                                <rect key="frame" x="10" y="741" width="239.5" height="22.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="指南二: ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.10980392247438431" green="0.14117647707462311" blue="0.14509804546833038" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="防”手工、打字“等类别的兼职">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <font key="NSFont" size="16" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-r7-aGr">
+                                                <rect key="frame" x="10" y="778" width="355" height="340"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">        大家对于网上的一些中介平台也要十分小心，特别是对于以下字眼的信息：“在家兼职”、“淘宝兼职”、“打字兼职”、“手工制作”、“刷信誉”、“夜场兼职”、“工艺品制作”、“手工沙画”、“平面模特”、“网络打字员”、“商务礼仪”、“伴游”、“在家办公”、“船员”、“文秘”、“群众演员“、”押运员“、“跟单员”、“市内送货”、“保安”、“商务司机”、“淘宝刷信誉”。
+　　这类兼职危险程度十分高，骗子们都会先给予一定的利益诱惑，获取信任后，利用人们贪婪的心理，一步步诱惑深入，骗取巨额金钱!
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <font key="NSFont" size="14" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="16" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">大家对于网上的一些中介平台也要十分小心，特别是对于以下字眼的信息：“在家兼职”、“淘宝兼职”、“打字兼职”、“手工制作”、“刷信誉”、“夜场兼职”、“工艺品制作”、“手工沙画”、“平面模特”、“网络打字员”、“商务礼仪”、“伴游”、“在家办公”、“船员”、“文秘”、“群众演员“、”押运员“、“跟单员”、“市内送货”、“保安”、“商务司机”、“淘宝刷信誉”。   这类兼职危险程度十分高，骗子们都会先给予一定的利益诱惑，获取信任后，利用人们贪婪的心理，一步步诱惑深入，骗取巨额金钱!</string>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhR-6M-BtP">
+                                                <rect key="frame" x="10" y="1133" width="168" height="28"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="指南三：综合识别招聘企业">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <font key="NSFont" size="16" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-WJ-jDW">
+                                                <rect key="frame" x="10" y="1176" width="355" height="340"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">        大家对于网上的一些中介平台也要十分小心，特别是对于以下字眼的信息：“在家兼职”、“淘宝兼职”、“打字兼职”、“手工制作”、“刷信誉”、“夜场兼职”、“工艺品制作”、“手工沙画”、“平面模特”、“网络打字员”、“商务礼仪”、“伴游”、“在家办公”、“船员”、“文秘”、“群众演员“、”押运员“、“跟单员”、“市内送货”、“保安”、“商务司机”、“淘宝刷信誉”。
+　　这类兼职危险程度十分高，骗子们都会先给予一定的利益诱惑，获取信任后，利用人们贪婪的心理，一步步诱惑深入，骗取巨额金钱!
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <font key="NSFont" size="14" name="STHeiti"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="16" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">大家对于网上的一些中介平台也要十分小心，特别是对于以下字眼的信息：“在家兼职”、“淘宝兼职”、“打字兼职”、“手工制作”、“刷信誉”、“夜场兼职”、“工艺品制作”、“手工沙画”、“平面模特”、“网络打字员”、“商务礼仪”、“伴游”、“在家办公”、“船员”、“文秘”、“群众演员“、”押运员“、“跟单员”、“市内送货”、“保安”、“商务司机”、“淘宝刷信誉”。   这类兼职危险程度十分高，骗子们都会先给予一定的利益诱惑，获取信任后，利用人们贪婪的心理，一步步诱惑深入，骗取巨额金钱!</string>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="gjW-OQ-wea" firstAttribute="leading" secondItem="Yhu-Ha-S8c" secondAttribute="leading" constant="10" id="1AY-MT-kXl"/>
+                                            <constraint firstItem="Nbl-WJ-jDW" firstAttribute="leading" secondItem="IhR-6M-BtP" secondAttribute="leading" id="31j-D6-8Ag"/>
+                                            <constraint firstItem="9fd-r7-aGr" firstAttribute="bottom" secondItem="NTC-G2-857" secondAttribute="bottom" constant="600" id="4GL-zA-TGB"/>
+                                            <constraint firstItem="oI7-Nr-31p" firstAttribute="top" secondItem="gjW-OQ-wea" secondAttribute="bottom" constant="15" id="4Z3-DP-QEA"/>
+                                            <constraint firstItem="oI7-Nr-31p" firstAttribute="leading" secondItem="Yhu-Ha-S8c" secondAttribute="leading" constant="10" id="8sp-Yf-R3g"/>
+                                            <constraint firstItem="NTC-G2-857" firstAttribute="top" secondItem="dcd-vO-Va4" secondAttribute="bottom" constant="15" id="9cd-EF-Hss"/>
+                                            <constraint firstItem="dcd-vO-Va4" firstAttribute="top" secondItem="oI7-Nr-31p" secondAttribute="bottom" id="ABt-CU-lvh"/>
+                                            <constraint firstAttribute="trailing" secondItem="9fd-r7-aGr" secondAttribute="trailing" constant="10" id="Cdl-L5-Mu7"/>
+                                            <constraint firstItem="IhR-6M-BtP" firstAttribute="leading" secondItem="9fd-r7-aGr" secondAttribute="leading" id="ELi-g4-yJF"/>
+                                            <constraint firstAttribute="trailing" secondItem="oI7-Nr-31p" secondAttribute="trailing" constant="10" id="GHX-ni-YFa"/>
+                                            <constraint firstItem="IhR-6M-BtP" firstAttribute="bottom" secondItem="9fd-r7-aGr" secondAttribute="bottom" constant="50" id="IEd-es-vzW"/>
+                                            <constraint firstItem="gjW-OQ-wea" firstAttribute="top" secondItem="JtE-pU-t5L" secondAttribute="bottom" constant="15" id="Kff-Xe-I7f"/>
+                                            <constraint firstAttribute="trailing" secondItem="vmi-0E-m9U" secondAttribute="trailing" id="Lmz-be-vSK"/>
+                                            <constraint firstItem="NTC-G2-857" firstAttribute="leading" secondItem="dcd-vO-Va4" secondAttribute="leading" id="MXo-Lm-wIN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nbl-WJ-jDW" secondAttribute="trailing" constant="10" id="Oof-SW-HfX"/>
+                                            <constraint firstItem="9fd-r7-aGr" firstAttribute="top" secondItem="NTC-G2-857" secondAttribute="bottom" constant="15" id="Q4q-iY-3PG"/>
+                                            <constraint firstAttribute="trailing" secondItem="JtE-pU-t5L" secondAttribute="trailing" constant="10" id="TLp-s4-Gfj"/>
+                                            <constraint firstItem="Nbl-WJ-jDW" firstAttribute="top" secondItem="IhR-6M-BtP" secondAttribute="bottom" constant="15" id="V0b-2h-iNs"/>
+                                            <constraint firstItem="9fd-r7-aGr" firstAttribute="leading" secondItem="NTC-G2-857" secondAttribute="leading" id="bDD-jI-6RA"/>
+                                            <constraint firstAttribute="height" constant="1507" id="dCA-fq-txT"/>
+                                            <constraint firstAttribute="width" constant="375" id="dEl-Pn-4zr"/>
+                                            <constraint firstItem="vmi-0E-m9U" firstAttribute="leading" secondItem="Yhu-Ha-S8c" secondAttribute="leading" id="gLE-eo-m8M"/>
+                                            <constraint firstItem="NTC-G2-857" firstAttribute="bottom" secondItem="dcd-vO-Va4" secondAttribute="bottom" constant="50" id="j9t-xe-Tda"/>
+                                            <constraint firstItem="JtE-pU-t5L" firstAttribute="top" secondItem="vmi-0E-m9U" secondAttribute="bottom" constant="20" id="jjo-z0-c6w"/>
+                                            <constraint firstItem="dcd-vO-Va4" firstAttribute="leading" secondItem="Yhu-Ha-S8c" secondAttribute="leading" constant="10" id="laU-0x-XHk"/>
+                                            <constraint firstItem="JtE-pU-t5L" firstAttribute="leading" secondItem="Yhu-Ha-S8c" secondAttribute="leading" constant="10" id="mB0-L3-7L4"/>
+                                            <constraint firstAttribute="trailing" secondItem="dcd-vO-Va4" secondAttribute="trailing" constant="10" id="mVc-2I-Bjh"/>
+                                            <constraint firstItem="vmi-0E-m9U" firstAttribute="top" secondItem="Yhu-Ha-S8c" secondAttribute="top" id="ngT-Wf-MIY"/>
+                                            <constraint firstItem="IhR-6M-BtP" firstAttribute="top" secondItem="9fd-r7-aGr" secondAttribute="bottom" constant="15" id="uU4-02-k4f"/>
+                                            <constraint firstItem="Nbl-WJ-jDW" firstAttribute="bottom" secondItem="IhR-6M-BtP" secondAttribute="bottom" constant="600" id="uhQ-gt-GYh"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="j9t-xe-Tda"/>
+                                                <exclude reference="4GL-zA-TGB"/>
+                                                <exclude reference="IEd-es-vzW"/>
+                                                <exclude reference="uhQ-gt-GYh"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yhu-Ha-S8c" secondAttribute="trailing" id="6iW-cX-ZaC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yhu-Ha-S8c" secondAttribute="bottom" id="8J1-lw-HGa"/>
+                                    <constraint firstItem="Yhu-Ha-S8c" firstAttribute="top" secondItem="XBg-2Q-TL2" secondAttribute="top" id="mfj-wd-EVg"/>
+                                    <constraint firstItem="Yhu-Ha-S8c" firstAttribute="leading" secondItem="XBg-2Q-TL2" secondAttribute="leading" id="ziC-0W-1uS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4VQ-dR-DaW" firstAttribute="top" secondItem="XBg-2Q-TL2" secondAttribute="bottom" id="4Cm-uk-bE2"/>
+                            <constraint firstItem="XBg-2Q-TL2" firstAttribute="leading" secondItem="IZK-da-76r" secondAttribute="leading" id="VKM-zI-Fgj"/>
+                            <constraint firstAttribute="trailing" secondItem="XBg-2Q-TL2" secondAttribute="trailing" id="gTT-5I-pT4"/>
+                            <constraint firstItem="XBg-2Q-TL2" firstAttribute="top" secondItem="89E-bX-qHm" secondAttribute="bottom" id="sUg-Q3-pob"/>
+                            <constraint firstItem="XBg-2Q-TL2" firstAttribute="centerX" secondItem="IZK-da-76r" secondAttribute="centerX" id="ypE-qQ-Eee"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="XBg-2Q-TL2" id="riC-hn-pCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qui-kc-8Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.5" y="-76.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jobimage" width="500" height="333"/>
+    </resources>
+</document>

@@ -26,7 +26,7 @@
 @property (nonatomic, assign) NSInteger pageview;
 /**salary*/
 @property (nonatomic, assign) NSInteger salary;
-/**settlecircle*/
+/**日结*/
 @property (nonatomic, copy) NSString *settlecircle;
 /**settletype*/
 @property (nonatomic, copy) NSString *settletype;

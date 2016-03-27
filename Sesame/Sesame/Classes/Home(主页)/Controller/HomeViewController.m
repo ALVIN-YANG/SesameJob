@@ -19,6 +19,8 @@
 #import "YLQHTTPSSessionManager.h"
 #import "FastJobViewController.h"
 #import "DetailJobMessageController.h"
+#import "TravelJobController.h"
+#import "MiaoJobController.h"
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
@@ -86,13 +88,15 @@ static NSString *const Mid = @"Mid";
 
 - (YLQScrollPage *)topScrollView{
     if (!_topScrollView) {
+        
         _topScrollView = [[YLQScrollPage alloc] init];
         _topScrollView.images = @[
-                                 [UIImage imageNamed:@"image0"],
-                                 [UIImage imageNamed:@"image1"],
-                                 [UIImage imageNamed:@"image2"],
-                                 [UIImage imageNamed:@"image3"]
-                                 ];
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.store.tanlu.cc/images/banners/banner_20160321153701.jpg"]]],
+                                 [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.store.tanlu.cc/images/banners/banner_20160323215143.jpg"]]],
+                                 [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.store.tanlu.cc/images/banners/banner_20160311193834.jpg"]]],
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.store.tanlu.cc/images/banners/banner_20160324172523.jpg"]]],
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.store.tanlu.cc/images/banners/banner_20160309122903.jpg"]]]
+                                   ];
         _topScrollView.delegate = self;
         _topScrollView.pageControl.pageIndicatorTintColor = [UIColor redColor];
         _topScrollView.pageControl.currentPageIndicatorTintColor = [UIColor yellowColor];
@@ -104,10 +108,9 @@ static NSString *const Mid = @"Mid";
     if (!_midScrollView) {
         _midScrollView = [[YLQScrollPage alloc] init];
         _midScrollView.images = @[
-                                  [UIImage imageNamed:@"image0"],
-                                  [UIImage imageNamed:@"image1"],
-                                  [UIImage imageNamed:@"image2"],
-                                  [UIImage imageNamed:@"image3"]
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com/message/guochengliang/1456903462166.jpg"]]],
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com//message//guochengliang//1445824521745.jpg"]]],
+                                  
                                   ];
         _midScrollView.delegate = self;
         _midScrollView.pageControl.pageIndicatorTintColor = [UIColor redColor];
@@ -212,12 +215,22 @@ static NSString *const Mid = @"Mid";
 - (void)fastJobButtonClick
 {
     NSLog(@"点击了第一个Button");
-    [self.navigationController pushViewController:[[FastJobViewController alloc]init] animated:YES];
+    UIWebView *firstWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, YLQScreenW, YLQScreenH - 64)];
+    firstWeb.scalesPageToFit = YES;
+    [firstWeb setDataDetectorTypes:UIDataDetectorTypePhoneNumber];
+    FastJobViewController *fastVC = [[FastJobViewController alloc] init];
+    [fastVC.view addSubview:firstWeb];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.tanlu.cc/job/themesList?themeId=905&source=app&tla=39.927669&tlo=116.450111&source=ios"]];
+    [firstWeb loadRequest:request];
+    [self.navigationController pushViewController:fastVC animated:YES];
 }
 
 - (void)miaoJobButtonClick
 {
     NSLog(@"点击了第二个Button");
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([MiaoJobController class]) bundle:nil];
+    MiaoJobController *MiaoVC = [storyBoard instantiateInitialViewController];
+    [self.navigationController pushViewController:MiaoVC animated:YES];
 }
 
 - (void)nearJobButtonClick
@@ -228,6 +241,9 @@ static NSString *const Mid = @"Mid";
 - (void)travelJobButtonClick
 {
     NSLog(@"点击了第四个Button");
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([TravelJobController class]) bundle:nil];
+    TravelJobController *TravelVC = [storyBoard instantiateInitialViewController];
+    [self.navigationController pushViewController:TravelVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -311,7 +327,9 @@ static NSString *const Mid = @"Mid";
     str = [str stringByReplacingOccurrencesOfString:@"2089891" withString:[NSString stringWithFormat:@"%zd", 2089891 + indexPath.row]];
 
     [self.mgr GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        YLQDetailModel *model = _itemArray[indexPath.row];
         DetailVC.model = [YLQDetailModel mj_objectWithKeyValues:responseObject[@"jobdetail"]];
+        DetailVC.model.distance = model.distance;
         [self.navigationController pushViewController:DetailVC animated:YES];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //返回错误代码
@@ -324,6 +342,34 @@ static NSString *const Mid = @"Mid";
 #pragma mark - ScrollPageDelegate
 - (void)infiniteScrollView:(YLQScrollPage *)scrollView didSelectItemAtIndex:(NSInteger)index
 {
+    UIWebView *firstWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, YLQScreenW, YLQScreenH - 64)];
+    firstWeb.scalesPageToFit = YES;
+    [firstWeb setDataDetectorTypes:UIDataDetectorTypePhoneNumber];
+    FastJobViewController *fastVC = [[FastJobViewController alloc] init];
+    [fastVC.view addSubview:firstWeb];
+    NSURL *url = [[NSURL alloc] init];
+        switch (index) {
+            case 0:
+                url = [NSURL URLWithString:@"http://m.tanlu.cc/article/detail?id=35&source=ios&userid=579032"];
+                break;
+            case 1:
+                url = [NSURL URLWithString:@"http://m.tanlu.cc/job/detail/81009.html?jobid=81009&cityId=28&tlo=116.450111&tla=39.927669&source=ios"];
+                break;
+            case 2:
+                url = [NSURL URLWithString:@"http://mp.weixin.qq.com/s?__biz=MjM5NzM4MDU3Nw==&mid=403307159&idx=4&sn=823c3793ee6449c2ff9b64b41b5c1562"];
+                break;
+            case 3:
+                url = [NSURL URLWithString:@"http://m.tanlu.cc/article/detail?id=37&sharesource=android&cityId=28&tlo=116.450111&tla=39.927669&source=ios"];
+                break;
+            case 4:
+                url = [NSURL URLWithString:@"http://m.tanlu.cc/article/detail?id=25&sharesource=android&cityId=28&tlo=116.450111&tla=39.927669&source=ios"];
+                break;
+            default:
+                break;
+        }
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [firstWeb loadRequest:request];
+    [self.navigationController pushViewController:fastVC animated:YES];
     NSLog(@"%zd", index);
 }
 

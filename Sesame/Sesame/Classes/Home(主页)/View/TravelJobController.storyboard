@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zhO-AV-kHQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Travel Job Controller-->
+        <scene sceneID="SaW-gX-idO">
+            <objects>
+                <viewController id="zhO-AV-kHQ" customClass="TravelJobController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lcJ-Ad-pKf"/>
+                        <viewControllerLayoutGuide type="bottom" id="HuC-xo-AgY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3dP-k3-wOc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBM-V2-zaX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-FI-z8b">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="970"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="兼职旅行" translatesAutoresizingMaskIntoConstraints="NO" id="MWh-Zw-KxY">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="GJl-5E-gmr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是兼职旅行?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-BD-Ilp">
+                                                <rect key="frame" x="10" y="165" width="120" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="1" green="0.3298362628" blue="0.36655670470000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-H6-xCY">
+                                                <rect key="frame" x="10" y="199" width="355" height="65"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="答: 兼职旅行, 网上又称为打工旅行, 或者义工旅行。因为有了青年旅舍, 旅舍常需要人手管理, 而也有这么一些背包青年, 想要穷游。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-Yo-c8C">
+                                                <rect key="frame" x="10" y="279" width="355" height="87.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="所以">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="在国内它更像是一种">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="在青年旅舍短期工作">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="(">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="一般是一个来月">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=")">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="来换取食宿">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="以节省长途旅行费用">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="并且让囊中羞涩但又心怀旅行梦想的年轻人">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="融入异地的生活获得更多的体验。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19764518632402939" green="0.46365513898374577" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="那些人适合去做?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-e0-qWf">
+                                                <rect key="frame" x="10" y="396" width="120" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="1" green="0.3298362628" blue="0.36655670470000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6do-qr-c5R">
+                                                <rect key="frame" x="10" y="431" width="355" height="185"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="答">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=": 1. ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="这种形式比较适合年轻学生">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="大家都没有什么钱">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="但是通过这种形式既让大家能走出去">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="又得到一定程度的锻炼">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="获得不一样的体验。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="                                                    2. ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="最好自己出行过几次">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="住几次青旅。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="对青年旅舍有基本的认识">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="否则难免想象成分很大。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">                                                                                                                                                            3. </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="既然是以打工的形式换取食宿">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="那么参加者肯定需具备一定的独立能力">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="诸如勤劳勇敢不娇气之类的素质是必须的。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQy-Rd-hXo">
+                                                <rect key="frame" x="10" y="646" width="60" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="工作指南">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90196079015731812" green="0.3490196168422699" blue="0.3490196168422699" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swa-uc-h4L">
+                                                <rect key="frame" x="10" y="682" width="355" height="223"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">答: 1. 兼职旅行是一种旅游目的地通过打工换取食宿的行为;                                                    2.旅舍提供合理的食宿, 一般无现金报酬。车票, 饭补等其它报酬视不同旅馆而异。                                                    3.工作内容包括但不限于 : 前台, 保洁, 接送客人, 做饭等 ;                                                                                                         4.出发前一定要与店家沟通好, 包括食宿, 作息, 工作内容, 到岗时间以及其他情况, 双方要诚信, 店家所述如不属实, 旅行者有权投诉甚至拉黑旅店;                                                    5.兼职旅行者如有突发情况无法按照约定到岗, 离职, 也请提前联系店家。                                                    </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lZA-Yo-c8C" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="0r4-wn-cuy"/>
+                                            <constraint firstItem="6do-qr-c5R" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="25X-Bg-3VN"/>
+                                            <constraint firstAttribute="trailing" secondItem="6do-qr-c5R" secondAttribute="trailing" constant="10" id="5ay-mP-13d"/>
+                                            <constraint firstItem="YQK-BD-Ilp" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="Drs-tS-IBY"/>
+                                            <constraint firstItem="eQy-Rd-hXo" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="Gcm-oF-0FH"/>
+                                            <constraint firstItem="Cb3-e0-qWf" firstAttribute="top" secondItem="lZA-Yo-c8C" secondAttribute="bottom" constant="30" id="KJx-cU-ggB"/>
+                                            <constraint firstItem="eQy-Rd-hXo" firstAttribute="top" secondItem="6do-qr-c5R" secondAttribute="bottom" constant="30" id="KqV-vf-scI"/>
+                                            <constraint firstItem="YQK-BD-Ilp" firstAttribute="top" secondItem="MWh-Zw-KxY" secondAttribute="bottom" constant="15" id="L4v-F7-Cef"/>
+                                            <constraint firstAttribute="width" constant="375" id="MfI-lD-xKr"/>
+                                            <constraint firstItem="MWh-Zw-KxY" firstAttribute="top" secondItem="vQw-FI-z8b" secondAttribute="top" id="MuN-gr-C7F"/>
+                                            <constraint firstItem="6do-qr-c5R" firstAttribute="top" secondItem="Cb3-e0-qWf" secondAttribute="bottom" constant="15" id="QA6-dk-8Wv"/>
+                                            <constraint firstAttribute="trailing" secondItem="lZA-Yo-c8C" secondAttribute="trailing" constant="10" id="Rbr-Y8-mRs"/>
+                                            <constraint firstItem="MWh-Zw-KxY" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" id="TK6-2j-mb8"/>
+                                            <constraint firstAttribute="trailing" secondItem="MWh-Zw-KxY" secondAttribute="trailing" id="VDg-Bm-bn6"/>
+                                            <constraint firstAttribute="trailing" secondItem="B9m-H6-xCY" secondAttribute="trailing" constant="10" id="VDj-sv-ihO"/>
+                                            <constraint firstItem="Cb3-e0-qWf" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="VKF-QL-x1H"/>
+                                            <constraint firstItem="Swa-uc-h4L" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="Xjj-ar-yLj"/>
+                                            <constraint firstItem="Swa-uc-h4L" firstAttribute="top" secondItem="eQy-Rd-hXo" secondAttribute="bottom" constant="15" id="ghB-bn-b6p"/>
+                                            <constraint firstItem="eQy-Rd-hXo" firstAttribute="top" secondItem="Swa-uc-h4L" secondAttribute="bottom" constant="15" id="go8-rz-6MX"/>
+                                            <constraint firstAttribute="height" constant="970" id="h6b-9G-9H1"/>
+                                            <constraint firstItem="lZA-Yo-c8C" firstAttribute="top" secondItem="B9m-H6-xCY" secondAttribute="bottom" constant="15" id="iZV-zF-WD7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Swa-uc-h4L" secondAttribute="trailing" constant="10" id="lK3-2s-BaN"/>
+                                            <constraint firstItem="eQy-Rd-hXo" firstAttribute="top" secondItem="Swa-uc-h4L" secondAttribute="bottom" constant="15" id="nah-4U-uKA"/>
+                                            <constraint firstItem="B9m-H6-xCY" firstAttribute="leading" secondItem="vQw-FI-z8b" secondAttribute="leading" constant="10" id="pMw-9q-Xfn"/>
+                                            <constraint firstItem="B9m-H6-xCY" firstAttribute="top" secondItem="YQK-BD-Ilp" secondAttribute="bottom" constant="15" id="wHD-ND-sLo"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="go8-rz-6MX"/>
+                                                <exclude reference="nah-4U-uKA"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vQw-FI-z8b" firstAttribute="leading" secondItem="iBM-V2-zaX" secondAttribute="leading" id="ABg-98-TTO"/>
+                                    <constraint firstItem="vQw-FI-z8b" firstAttribute="top" secondItem="iBM-V2-zaX" secondAttribute="top" id="NVZ-AP-rn2"/>
+                                    <constraint firstAttribute="height" constant="647" id="OsJ-JP-yhJ"/>
+                                    <constraint firstAttribute="height" constant="900" id="Szl-sZ-iC0"/>
+                                    <constraint firstAttribute="bottom" secondItem="vQw-FI-z8b" secondAttribute="bottom" id="aL4-8O-7Qi"/>
+                                    <constraint firstAttribute="trailing" secondItem="vQw-FI-z8b" secondAttribute="trailing" id="e6T-aG-NiJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Szl-sZ-iC0"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iBM-V2-zaX" firstAttribute="top" secondItem="lcJ-Ad-pKf" secondAttribute="bottom" id="Ae9-jC-RAC"/>
+                            <constraint firstAttribute="trailing" secondItem="iBM-V2-zaX" secondAttribute="trailing" id="My7-S2-x0L"/>
+                            <constraint firstItem="iBM-V2-zaX" firstAttribute="centerX" secondItem="3dP-k3-wOc" secondAttribute="centerX" id="b3C-A8-EzD"/>
+                            <constraint firstItem="iBM-V2-zaX" firstAttribute="leading" secondItem="3dP-k3-wOc" secondAttribute="leading" id="q4V-j6-Nj8"/>
+                            <constraint firstItem="HuC-xo-AgY" firstAttribute="top" secondItem="iBM-V2-zaX" secondAttribute="bottom" id="qLd-Pe-tAy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qLd-Pe-tAy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="iBM-V2-zaX" id="IuK-22-lLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFo-vB-n5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="317.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="兼职旅行" width="481" height="326"/>
+    </resources>
+</document>
