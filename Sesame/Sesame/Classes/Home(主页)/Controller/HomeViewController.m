@@ -127,7 +127,7 @@ static NSString *const Mid = @"Mid";
     return _mgr;
 }
 
-#pragma mark - 时间监听
+#pragma mark - 事件监听
 - (void)tabBarButtonDidRepeatClick{
     //如果当前控制器View不在window上,直接返回
     //self.view.window 可以拿到所在控制器view在哪一个window上
@@ -214,7 +214,7 @@ static NSString *const Mid = @"Mid";
 #pragma mark - SecondViewDelegate
 - (void)fastJobButtonClick
 {
-    NSLog(@"点击了第一个Button");
+//    NSLog(@"点击了第一个Button");
     UIWebView *firstWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, YLQScreenW, YLQScreenH - 64)];
     firstWeb.scalesPageToFit = YES;
     [firstWeb setDataDetectorTypes:UIDataDetectorTypePhoneNumber];
@@ -227,7 +227,7 @@ static NSString *const Mid = @"Mid";
 
 - (void)miaoJobButtonClick
 {
-    NSLog(@"点击了第二个Button");
+//    NSLog(@"点击了第二个Button");
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([MiaoJobController class]) bundle:nil];
     MiaoJobController *MiaoVC = [storyBoard instantiateInitialViewController];
     [self.navigationController pushViewController:MiaoVC animated:YES];
@@ -240,7 +240,7 @@ static NSString *const Mid = @"Mid";
 
 - (void)travelJobButtonClick
 {
-    NSLog(@"点击了第四个Button");
+//    NSLog(@"点击了第四个Button");
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([TravelJobController class]) bundle:nil];
     TravelJobController *TravelVC = [storyBoard instantiateInitialViewController];
     [self.navigationController pushViewController:TravelVC animated:YES];

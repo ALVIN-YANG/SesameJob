@@ -9,3 +9,4 @@ pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'Masonry'
 pod 'MJRefresh’
+pod 'CYLTableViewPlaceHolder'

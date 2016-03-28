@@ -12,6 +12,14 @@
 		393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393C86C31CA802F700B76AB2 /* TravelJobController.storyboard */; };
 		393C86C71CA822CC00B76AB2 /* MiaoJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86C61CA822CC00B76AB2 /* MiaoJobController.m */; };
 		393C86C91CA822DC00B76AB2 /* MiaoJobController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393C86C81CA822DC00B76AB2 /* MiaoJobController.storyboard */; };
+		393C86CC1CA8CA8100B76AB2 /* TotalJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86CB1CA8CA8100B76AB2 /* TotalJobController.m */; };
+		393C86CF1CA8CAB800B76AB2 /* AdmitJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86CE1CA8CAB800B76AB2 /* AdmitJobController.m */; };
+		393C86D21CA8CB0800B76AB2 /* WaitJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86D11CA8CB0800B76AB2 /* WaitJobController.m */; };
+		393C86D51CA8CB2000B76AB2 /* WaitSalaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86D41CA8CB2000B76AB2 /* WaitSalaryController.m */; };
+		393C86D81CA8CB5F00B76AB2 /* WaitReviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86D71CA8CB5F00B76AB2 /* WaitReviewController.m */; };
+		393C86DB1CA8CBB800B76AB2 /* BaseJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86DA1CA8CBB800B76AB2 /* BaseJobController.m */; };
+		393C86DE1CA8CDDB00B76AB2 /* YLQTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86DD1CA8CDDB00B76AB2 /* YLQTitleButton.m */; };
+		393C86E11CA92B8800B76AB2 /* WeChatStylePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 393C86E01CA92B8800B76AB2 /* WeChatStylePlaceHolder.m */; };
 		393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */; };
 		394C20E41C90609900A3A722 /* YLQCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E31C90609900A3A722 /* YLQCellModel.m */; };
 		394C20E81C9060D600A3A722 /* YLQTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20E61C9060D600A3A722 /* YLQTableCell.m */; };
@@ -81,6 +89,22 @@
 		393C86C51CA822CC00B76AB2 /* MiaoJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiaoJobController.h; sourceTree = "<group>"; };
 		393C86C61CA822CC00B76AB2 /* MiaoJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiaoJobController.m; sourceTree = "<group>"; };
 		393C86C81CA822DC00B76AB2 /* MiaoJobController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MiaoJobController.storyboard; sourceTree = "<group>"; };
+		393C86CA1CA8CA8100B76AB2 /* TotalJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalJobController.h; sourceTree = "<group>"; };
+		393C86CB1CA8CA8100B76AB2 /* TotalJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalJobController.m; sourceTree = "<group>"; };
+		393C86CD1CA8CAB800B76AB2 /* AdmitJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdmitJobController.h; sourceTree = "<group>"; };
+		393C86CE1CA8CAB800B76AB2 /* AdmitJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdmitJobController.m; sourceTree = "<group>"; };
+		393C86D01CA8CB0800B76AB2 /* WaitJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitJobController.h; sourceTree = "<group>"; };
+		393C86D11CA8CB0800B76AB2 /* WaitJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitJobController.m; sourceTree = "<group>"; };
+		393C86D31CA8CB2000B76AB2 /* WaitSalaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitSalaryController.h; sourceTree = "<group>"; };
+		393C86D41CA8CB2000B76AB2 /* WaitSalaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitSalaryController.m; sourceTree = "<group>"; };
+		393C86D61CA8CB5F00B76AB2 /* WaitReviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitReviewController.h; sourceTree = "<group>"; };
+		393C86D71CA8CB5F00B76AB2 /* WaitReviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitReviewController.m; sourceTree = "<group>"; };
+		393C86D91CA8CBB800B76AB2 /* BaseJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseJobController.h; sourceTree = "<group>"; };
+		393C86DA1CA8CBB800B76AB2 /* BaseJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseJobController.m; sourceTree = "<group>"; };
+		393C86DC1CA8CDDB00B76AB2 /* YLQTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTitleButton.h; sourceTree = "<group>"; };
+		393C86DD1CA8CDDB00B76AB2 /* YLQTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTitleButton.m; sourceTree = "<group>"; };
+		393C86DF1CA92B8800B76AB2 /* WeChatStylePlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatStylePlaceHolder.h; sourceTree = "<group>"; };
+		393C86E01CA92B8800B76AB2 /* WeChatStylePlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatStylePlaceHolder.m; sourceTree = "<group>"; };
 		393F9BEC1C916F0A0027ACA8 /* YLQHTTPSSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQHTTPSSessionManager.h; sourceTree = "<group>"; };
 		393F9BED1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQHTTPSSessionManager.m; sourceTree = "<group>"; };
 		394C20E21C90609900A3A722 /* YLQCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQCellModel.h; sourceTree = "<group>"; };
@@ -257,7 +281,7 @@
 				39E73E591C57BBEA00E7B292 /* Tool(业务逻辑) */,
 				39E73E441C57BBEA00E7B292 /* Main(主要) */,
 				39E73E401C57BBEA00E7B292 /* Home(主页) */,
-				39E73E551C57BBEA00E7B292 /* Sift(筛选) */,
+				39E73E551C57BBEA00E7B292 /* Sift(相关工作) */,
 				39E73E481C57BBEA00E7B292 /* Message(消息) */,
 				39E73E4C1C57BBEA00E7B292 /* Mine(我) */,
 			);
@@ -476,13 +500,14 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		39E73E551C57BBEA00E7B292 /* Sift(筛选) */ = {
+		39E73E551C57BBEA00E7B292 /* Sift(相关工作) */ = {
 			isa = PBXGroup;
 			children = (
 				39E73E561C57BBEA00E7B292 /* Controller */,
 				39E73E571C57BBEA00E7B292 /* Model */,
 				39E73E581C57BBEA00E7B292 /* View */,
 			);
+			name = "Sift(相关工作)";
 			path = "Sift(筛选)";
 			sourceTree = "<group>";
 		};
@@ -491,6 +516,18 @@
 			children = (
 				39E73E661C57BE1800E7B292 /* SiftViewController.h */,
 				39E73E671C57BE1800E7B292 /* SiftViewController.m */,
+				393C86D91CA8CBB800B76AB2 /* BaseJobController.h */,
+				393C86DA1CA8CBB800B76AB2 /* BaseJobController.m */,
+				393C86CA1CA8CA8100B76AB2 /* TotalJobController.h */,
+				393C86CB1CA8CA8100B76AB2 /* TotalJobController.m */,
+				393C86D01CA8CB0800B76AB2 /* WaitJobController.h */,
+				393C86D11CA8CB0800B76AB2 /* WaitJobController.m */,
+				393C86CD1CA8CAB800B76AB2 /* AdmitJobController.h */,
+				393C86CE1CA8CAB800B76AB2 /* AdmitJobController.m */,
+				393C86D31CA8CB2000B76AB2 /* WaitSalaryController.h */,
+				393C86D41CA8CB2000B76AB2 /* WaitSalaryController.m */,
+				393C86D61CA8CB5F00B76AB2 /* WaitReviewController.h */,
+				393C86D71CA8CB5F00B76AB2 /* WaitReviewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -505,6 +542,10 @@
 		39E73E581C57BBEA00E7B292 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				393C86DC1CA8CDDB00B76AB2 /* YLQTitleButton.h */,
+				393C86DD1CA8CDDB00B76AB2 /* YLQTitleButton.m */,
+				393C86DF1CA92B8800B76AB2 /* WeChatStylePlaceHolder.h */,
+				393C86E01CA92B8800B76AB2 /* WeChatStylePlaceHolder.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -740,10 +781,12 @@
 				39E73E5C1C57BBEA00E7B292 /* main.m in Sources */,
 				39E73E681C57BE1800E7B292 /* SiftViewController.m in Sources */,
 				398C63F71C8EBB5900C11C40 /* UIView+Init.m in Sources */,
+				393C86CF1CA8CAB800B76AB2 /* AdmitJobController.m in Sources */,
 				398C63FE1C8EE0C800C11C40 /* UITextField+Placeholder.m in Sources */,
 				398C640B1C8F118F00C11C40 /* RefreshView.m in Sources */,
 				394C20EF1C906CB800A3A722 /* YLQRefreshFooter.m in Sources */,
 				398C63F31C8EBB5900C11C40 /* NSCalendar+Init.m in Sources */,
+				393C86DE1CA8CDDB00B76AB2 /* YLQTitleButton.m in Sources */,
 				393C86C71CA822CC00B76AB2 /* MiaoJobController.m in Sources */,
 				398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */,
 				39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */,
@@ -752,11 +795,15 @@
 				393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */,
 				398C63FB1C8EC7A000C11C40 /* UIImage+Render.m in Sources */,
 				39E73E5F1C57BCEB00E7B292 /* YLQTabBarController.m in Sources */,
+				393C86D51CA8CB2000B76AB2 /* WaitSalaryController.m in Sources */,
 				398C63F51C8EBB5900C11C40 /* UIImage+Circle.m in Sources */,
+				393C86DB1CA8CBB800B76AB2 /* BaseJobController.m in Sources */,
 				398C63F41C8EBB5900C11C40 /* NSDate+Interval.m in Sources */,
 				398C63F21C8EBB5900C11C40 /* Globol.m in Sources */,
+				393C86D21CA8CB0800B76AB2 /* WaitJobController.m in Sources */,
 				398C63F61C8EBB5900C11C40 /* UIView+Frame.m in Sources */,
 				39E73E621C57BD0D00E7B292 /* YLQNavigationController.m in Sources */,
+				393C86CC1CA8CA8100B76AB2 /* TotalJobController.m in Sources */,
 				39E73E6B1C57BE2800E7B292 /* MessageViewController.m in Sources */,
 				397C2A4C1CA64CC10034973A /* UIBarButtonItem+Item.m in Sources */,
 				393F9BEE1C916F0A0027ACA8 /* YLQHTTPSSessionManager.m in Sources */,
@@ -764,6 +811,8 @@
 				397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */,
 				398C64031C8EEB4800C11C40 /* YLQScrollPage.m in Sources */,
 				39E73E651C57BD9200E7B292 /* HomeViewController.m in Sources */,
+				393C86E11CA92B8800B76AB2 /* WeChatStylePlaceHolder.m in Sources */,
+				393C86D81CA8CB5F00B76AB2 /* WaitReviewController.m in Sources */,
 				398C64101C8F2BEC00C11C40 /* YLQHomeTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

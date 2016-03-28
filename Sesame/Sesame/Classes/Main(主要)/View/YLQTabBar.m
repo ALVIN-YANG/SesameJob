@@ -62,6 +62,7 @@
         //发送通知
         [[NSNotificationCenter defaultCenter] postNotificationName:YLQTabBarButtonDidRepeatClickNotification object:nil];
     }
+    self.previousClickedTabBarButtonTag = tabBarButton.tag;
     
 }
 @end

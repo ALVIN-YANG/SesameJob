@@ -81,7 +81,7 @@
     nv1.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"tabbar_home_highlighted"];
     //全部
     YLQNavigationController *nv2 = self.childViewControllers[1];
-    nv2.tabBarItem.title = @"全部";
+    nv2.tabBarItem.title = @"工作";
     nv2.tabBarItem.image = [UIImage imageNamed:@"latest_parttime"];
     nv2.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"latest_parttime_hl"];
     //消息
