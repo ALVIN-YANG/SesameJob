@@ -10,4 +10,6 @@
 
 @interface UIView (Init)
 + (instancetype)ylq_viewFromXib;
+
+
 @end

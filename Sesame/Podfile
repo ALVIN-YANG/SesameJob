@@ -10,3 +10,5 @@ pod 'SVProgressHUD'
 pod 'Masonry'
 pod 'MJRefresh’
 pod 'CYLTableViewPlaceHolder'
+pod 'EaseMobSDKFull'
+pod 'SVProgressHUD'

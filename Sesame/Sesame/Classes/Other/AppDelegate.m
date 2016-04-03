@@ -9,8 +9,11 @@
 #import "AppDelegate.h"
 #import "YLQTabBarController.h"
 #import "YLQTopWindow.h"
+#import "YFStartView.h"
+#import "StartButtonView.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<EMChatManagerDelegate>
+
 
 @end
 
@@ -18,9 +21,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //自动获取好友列表, 当然只有一个客服
+    [[EaseMob sharedInstance].chatManager setIsAutoFetchBuddyList:YES];
+    
+    [[EaseMob sharedInstance] registerSDKWithAppKey:@"amchocolate#sesame" apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger:@(NO)}];
+    [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    //添加ChatManager的代理, 主线程, 收发消息, 登录注销
+    [[EaseMob sharedInstance].chatManager addDelegate:self delegateQueue:nil];
+    
+    //如果用户登陆过, 直接进入界面
+    //进入主界面
+     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    if ([[EaseMob sharedInstance].chatManager isAutoLoginEnabled])
+    {
     self.window.rootViewController = [[YLQTabBarController alloc] init];
     [self.window makeKeyAndVisible];
+    } else {
+        //进入登录界面
+        UIViewController *tabBarVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+        self.window.rootViewController = tabBarVC;
+        [self.window makeKeyAndVisible];
+    }
+    YFStartView *startView = [YFStartView startView];
+    startView.isAllowRandomImage = YES;
+    startView.randomImages = [NSMutableArray arrayWithObjects:@"startImage4", @"startImage2", @"startImage1", @"startImage3", nil];
+    
+    //LogoPositionCenter
+    //    startView.logoPosition = LogoPositionCenter;
+    //    startView.logoImage = [UIImage imageNamed:@"logo"];
+    
+    //LogoPositionCenter & UIView
+    startView.logoPosition = LogoPositionButtom;
+    StartButtonView *startButtonView = [[[NSBundle mainBundle] loadNibNamed:@"StartButtonView" owner:self options:nil] lastObject];
+    startView.logoView = startButtonView;
+    
+    //LogoPositionCenter & UIImage
+    //    startView.logoPosition = LogoPositionButtom;
+    //    startView.logoImage = [UIImage imageNamed:@"logo"];
+    
+    [startView configYFStartView];
+    
     //显示顶层window
     [YLQTopWindow showWithStatusBarClickWithBlock:^{
         [self searchAllScrollViewsInView:application.keyWindow];

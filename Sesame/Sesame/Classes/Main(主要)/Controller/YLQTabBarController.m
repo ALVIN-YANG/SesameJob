@@ -62,11 +62,13 @@
     YLQNavigationController *nv2 = [[YLQNavigationController alloc] initWithRootViewController:vc2];
     [self addChildViewController:nv2];
     //消息
-    MessageViewController *vc3 = [[MessageViewController alloc] init];
-    YLQNavigationController *nv3 = [[YLQNavigationController alloc] initWithRootViewController:vc3];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([MessageViewController class]) bundle:nil];
+    MessageViewController *MiaoVC = [storyBoard instantiateInitialViewController];
+//    MessageViewController *vc3 = [[MessageViewController alloc] init];
+    YLQNavigationController *nv3 = [[YLQNavigationController alloc] initWithRootViewController:MiaoVC];
     [self addChildViewController:nv3];
     //我
-    MineViewController *vc4 = [[MineViewController alloc] init];
+    MineViewController *vc4 = [[UIStoryboard storyboardWithName:NSStringFromClass([MineViewController class]) bundle:nil] instantiateInitialViewController];
     YLQNavigationController *nv4 = [[YLQNavigationController alloc] initWithRootViewController:vc4];
     [self addChildViewController:nv4];
     

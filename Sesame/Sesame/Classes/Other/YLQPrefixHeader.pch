@@ -18,7 +18,7 @@
 #import "UIImage+Render.h"
 #import "UITextField+Placeholder.h"
 #import "UIBarButtonItem+Item.h"
-
+#import "EaseMob.h"
 
 #endif /* YLQPrefixHeader_pch */
 /*****屏幕*******/
