@@ -53,7 +53,7 @@
         }
     }
     // 设置加号按钮位置
-    self.plusButton.center = CGPointMake(YLQScreenW * 0.5, h * 0.5 - 6);
+    self.plusButton.center = CGPointMake(YLQScreenW * 0.5, h * 0.5);
 }
 
 #pragma mark - tabBarButtonClick

@@ -21,6 +21,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [UIApplication sharedApplication].applicationIconBadgeNumber
+    = 3;
     //自动获取好友列表, 当然只有一个客服
     [[EaseMob sharedInstance].chatManager setIsAutoFetchBuddyList:YES];
     
@@ -62,6 +64,7 @@
     
     [startView configYFStartView];
     
+   
     //显示顶层window
     [YLQTopWindow showWithStatusBarClickWithBlock:^{
         [self searchAllScrollViewsInView:application.keyWindow];

@@ -64,9 +64,10 @@
     //消息
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([MessageViewController class]) bundle:nil];
     MessageViewController *MiaoVC = [storyBoard instantiateInitialViewController];
-//    MessageViewController *vc3 = [[MessageViewController alloc] init];
     YLQNavigationController *nv3 = [[YLQNavigationController alloc] initWithRootViewController:MiaoVC];
     [self addChildViewController:nv3];
+    //显示信息提醒
+    [MiaoVC loadConversationList];
     //我
     MineViewController *vc4 = [[UIStoryboard storyboardWithName:NSStringFromClass([MineViewController class]) bundle:nil] instantiateInitialViewController];
     YLQNavigationController *nv4 = [[YLQNavigationController alloc] initWithRootViewController:vc4];

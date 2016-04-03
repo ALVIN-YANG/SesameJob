@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MessageViewController : UITableViewController
-
+- (void)loadConversationList;
 @end

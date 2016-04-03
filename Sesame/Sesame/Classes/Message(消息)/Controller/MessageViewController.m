@@ -18,13 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self loadConversationList];
+    self.navigationItem.title = @"芝麻客服";
+    
+}
+
+- (void)loadConversationList {
     [[EaseMob sharedInstance].chatManager addDelegate:self delegateQueue:nil];
     // 加载会话列表
-    //    [[EaseMob sharedInstance].chatManager conversations]
     self.conversations =  [[EaseMob sharedInstance].chatManager loadAllConversationsFromDatabaseWithAppend2Chat:YES];
     NSLog(@"会话列表 %@",self.conversations);
-    
-    self.navigationItem.title = @"芝麻客服";
     // 显示总的未读消息数
     [self showTabbarItemBadge];
 }
@@ -42,7 +46,6 @@
     } else {
         self.navigationController.tabBarItem.badgeValue = nil;
     }
-    
 }
 
 #pragma mark - EMChatManagerDelegate
