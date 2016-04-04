@@ -12,6 +12,7 @@
 		392F47081CB0EF6F00F80D59 /* YLQVoiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 392F47001CB0EF6F00F80D59 /* YLQVoiceTool.m */; };
 		392F47091CB0EF6F00F80D59 /* YLQChatPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 392F47031CB0EF6F00F80D59 /* YLQChatPageCell.m */; };
 		392F470A1CB0EF6F00F80D59 /* YLQTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 392F47051CB0EF6F00F80D59 /* YLQTimeCell.m */; };
+		392F476E1CB11F5500F80D59 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 392F476D1CB11F5500F80D59 /* Entitlements.plist */; };
 		3933B3351CB09FE100393027 /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3933B3051CB09FE100393027 /* EMAudioPlayerUtil.m */; };
 		3933B3361CB09FE100393027 /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3933B3071CB09FE100393027 /* EMAudioRecorderUtil.m */; };
 		3933B3371CB09FE100393027 /* EMCDDeviceManager+Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 3933B3091CB09FE100393027 /* EMCDDeviceManager+Media.m */; };
@@ -116,6 +117,7 @@
 		392F47031CB0EF6F00F80D59 /* YLQChatPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQChatPageCell.m; sourceTree = "<group>"; };
 		392F47041CB0EF6F00F80D59 /* YLQTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTimeCell.h; sourceTree = "<group>"; };
 		392F47051CB0EF6F00F80D59 /* YLQTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTimeCell.m; sourceTree = "<group>"; };
+		392F476D1CB11F5500F80D59 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		3933B3001CB09FE100393027 /* EMCDDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerDelegate.h; sourceTree = "<group>"; };
 		3933B3011CB09FE100393027 /* EMCDDeviceManagerProximitySensorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerProximitySensorDelegate.h; sourceTree = "<group>"; };
 		3933B3031CB09FE100393027 /* DemoErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoErrorCode.h; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 				39E73E1A1C57B69F00E7B292 /* LaunchScreen.storyboard */,
 				39E73E1D1C57B69F00E7B292 /* Info.plist */,
 				39E73E0C1C57B69F00E7B292 /* Supporting Files */,
+				392F476D1CB11F5500F80D59 /* Entitlements.plist */,
 			);
 			path = Sesame;
 			sourceTree = "<group>";
@@ -946,6 +949,7 @@
 				397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */,
 				393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */,
 				393C87A41CAB634800B76AB2 /* StartButtonView.xib in Resources */,
+				392F476E1CB11F5500F80D59 /* Entitlements.plist in Resources */,
 				393C86C91CA822DC00B76AB2 /* MiaoJobController.storyboard in Resources */,
 				398C64051C8EF6D500C11C40 /* SecondView.xib in Resources */,
 				39E73E1C1C57B69F00E7B292 /* LaunchScreen.storyboard in Resources */,
@@ -1219,6 +1223,8 @@
 			baseConfigurationReference = EED1D5B32CAF300AF877E022 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = /Users/YLQ/Desktop/SesameJob/Sesame/Sesame/Entitlements.plist;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/YLQ/Desktop/SesameJob/Sesame/Sesame/Classes/Other/YLQPrefixHeader.pch;
 				INFOPLIST_FILE = Sesame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1238,6 +1244,8 @@
 			baseConfigurationReference = EAAE9DBBE2643412C8E389FE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = /Users/YLQ/Desktop/SesameJob/Sesame/Sesame/Entitlements.plist;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/YLQ/Desktop/SesameJob/Sesame/Sesame/Classes/Other/YLQPrefixHeader.pch;
 				INFOPLIST_FILE = Sesame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
