@@ -25,6 +25,8 @@
     //获取当前登录用户名称
     NSDictionary *loginInfo = [[EaseMob sharedInstance].chatManager loginInfo];
     self.userNameLabel.text = loginInfo[@"username"];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -80,6 +82,9 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //cell背景选择后恢复
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     if (1 == indexPath.section && 2 == indexPath.row) {
         // 删除cache缓存
         // 获取cache文件夹路径
@@ -94,7 +99,10 @@
         
         [self.tableView reloadData];
         self.cacheLabel.text = [self cacheStr:_totalSize];
-    }
+    }else if (1 == indexPath.section && 1 == indexPath.row) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://15653968657"]];
+        }
+    
 }
 
 @end

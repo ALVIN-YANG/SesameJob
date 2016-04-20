@@ -108,8 +108,8 @@ static NSString *const Mid = @"Mid";
     if (!_midScrollView) {
         _midScrollView = [[YLQScrollPage alloc] init];
         _midScrollView.images = @[
-                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com/message/guochengliang/1456903462166.jpg"]]],
-                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com//message//guochengliang//1445824521745.jpg"]]],
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com/message/rese-11/1459482487545.jpg"]]],
+                                  [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.jianzhimao.com/message/Frank/1445483977477.jpg"]]],
                                   
                                   ];
         _midScrollView.delegate = self;
