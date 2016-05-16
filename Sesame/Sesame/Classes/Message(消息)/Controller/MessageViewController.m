@@ -9,9 +9,12 @@
 #import "MessageViewController.h"
 #import "YLQChatPageViewController.h"
 
+#import "YLQContactsViewController.h"
+
 @interface MessageViewController ()<EMChatManagerDelegate>
 /** 会话数据*/
 @property (nonatomic, strong) NSArray *conversations;
+
 @end
 
 @implementation MessageViewController
@@ -19,9 +22,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setNavigation];
     [self loadConversationList];
-    self.navigationItem.title = @"芝麻客服";
     
+    
+}
+
+- (void)setNavigation
+{
+    self.navigationItem.title = @"Boos直聊";
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"雇主列表" forState:UIControlStateNormal];
+    //Custom必须设置颜色
+    [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(jumpToAddFriends) forControlEvents:UIControlEventTouchUpInside];
+    [btn sizeToFit];
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:btn]];
+}
+
+- (void)jumpToAddFriends
+{
+    YLQContactsViewController *contactsVC = [[UIStoryboard storyboardWithName:NSStringFromClass([YLQContactsViewController class]) bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:contactsVC animated:YES];
 }
 
 - (void)loadConversationList {
@@ -78,7 +101,7 @@
  @result
  */
 - (void)didAutoReconnectFinishedWithError:(NSError *)error {
-    self.navigationItem.title = @"芝麻客服";
+    self.navigationItem.title = @"Boos直聊";
 }
 
 

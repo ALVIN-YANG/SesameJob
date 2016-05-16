@@ -12,3 +12,5 @@ pod 'MJRefresh’
 pod 'CYLTableViewPlaceHolder'
 pod 'EaseMobSDKFull'
 pod 'SVProgressHUD'
+pod ‘AMap3DMap’
+pod ‘AMapSearch’

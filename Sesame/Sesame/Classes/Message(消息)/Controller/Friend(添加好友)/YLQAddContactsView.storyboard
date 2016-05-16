@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RoE-bP-Cax">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add Contacts View-->
+        <scene sceneID="iSq-6z-XcO">
+            <objects>
+                <viewController id="RoE-bP-Cax" customClass="YLQAddContactsView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K93-cG-1BK"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOt-vy-wnb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pud-cH-tHW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入好友账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VFC-S6-bsV">
+                                <rect key="frame" x="100" y="125" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlF-Pe-AKh">
+                                <rect key="frame" x="72" y="224" width="176" height="32"/>
+                                <color key="backgroundColor" red="0.086274512110000007" green="0.68235296010000002" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="Cl6-1C-B4y"/>
+                                    <constraint firstAttribute="height" constant="32" id="lUB-6y-aGc"/>
+                                </constraints>
+                                <state key="normal" title="添加好友">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonClick:" destination="RoE-bP-Cax" eventType="touchUpInside" id="QGP-0q-iZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LlF-Pe-AKh" firstAttribute="centerY" secondItem="Pud-cH-tHW" secondAttribute="centerY" id="6Yo-po-Xkz"/>
+                            <constraint firstItem="LlF-Pe-AKh" firstAttribute="centerX" secondItem="Pud-cH-tHW" secondAttribute="centerX" id="TMN-Hl-gwz"/>
+                            <constraint firstItem="VFC-S6-bsV" firstAttribute="centerX" secondItem="Pud-cH-tHW" secondAttribute="centerX" id="Wl7-X2-zAT"/>
+                            <constraint firstItem="VFC-S6-bsV" firstAttribute="centerY" secondItem="Pud-cH-tHW" secondAttribute="centerY" constant="-100" id="quA-0j-LaS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fKV-tP-KZ2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addTextField" destination="VFC-S6-bsV" id="jQZ-jo-Sjh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-xS-PMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="254"/>
+        </scene>
+    </scenes>
+</document>

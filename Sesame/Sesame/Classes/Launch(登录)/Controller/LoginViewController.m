@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "YLQTabBarController.h"
 #import <EaseMob.h>
+#import <SVProgressHUD.h>
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -40,9 +41,9 @@
 - (IBAction)registerClick:(id)sender {
     [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:self.userName.text password:self.passWordLabel.text withCompletion:^(NSString *username, NSString *password, EMError *error) {
         if (!error) {
-            NSLog(@"注册成功");
+            [SVProgressHUD showInfoWithStatus:@"注册成功\n点击登录"];
         }else {
-            NSLog(@"注册失败%@", error);
+            [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"%@", error]];
         }
     } onQueue:nil];
 }
@@ -51,15 +52,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

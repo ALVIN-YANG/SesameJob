@@ -24,6 +24,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## AMap3DMap
+
+Copyright © 2014 AutoNavi. All Rights Reserved.
+
+
+## AMapSearch
+
+Copyright © 2014 AutoNavi. All Rights Reserved.
+
+
 ## CYLTableViewPlaceHolder
 
 Copyright (c) 2015 CYLTabBarController(https://github.com/ChenYilong/CYLTableViewPlaceHolder), L.L.C. All rights reserved.

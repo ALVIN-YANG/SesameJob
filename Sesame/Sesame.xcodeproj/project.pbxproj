@@ -53,6 +53,16 @@
 		394C20EF1C906CB800A3A722 /* YLQRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20EE1C906CB800A3A722 /* YLQRefreshFooter.m */; };
 		394C20F21C906EC000A3A722 /* YLQTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20F11C906EC000A3A722 /* YLQTopWindow.m */; };
 		394C20F51C9075D700A3A722 /* FastJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C20F41C9075D700A3A722 /* FastJobViewController.m */; };
+		39667CF71CE89AEF00DC311E /* annotationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 39667CE91CE89AEF00DC311E /* annotationImage.png */; };
+		39667CF81CE89AEF00DC311E /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = 39667CEA1CE89AEF00DC311E /* building.png */; };
+		39667CF91CE89AEF00DC311E /* location_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39667CEB1CE89AEF00DC311E /* location_no@2x.png */; };
+		39667CFA1CE89AEF00DC311E /* location_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39667CEC1CE89AEF00DC311E /* location_yes@2x.png */; };
+		39667CFB1CE89AEF00DC311E /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39667CED1CE89AEF00DC311E /* search@2x.png */; };
+		39667CFC1CE89AEF00DC311E /* AMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CEF1CE89AEF00DC311E /* AMapViewController.m */; };
+		39667CFD1CE89AEF00DC311E /* YLQAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CF11CE89AEF00DC311E /* YLQAnnotationView.m */; };
+		39667CFE1CE89AEF00DC311E /* YLQCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CF31CE89AEF00DC311E /* YLQCalloutView.m */; };
+		39667CFF1CE89AEF00DC311E /* YLQDetailPageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CF51CE89AEF00DC311E /* YLQDetailPageViewViewController.m */; };
+		39667D001CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39667CF61CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard */; };
 		397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A3D1CA502800034973A /* DetailJobMessageController.m */; };
 		397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397C2A451CA512360034973A /* DetailJobMessageController.storyboard */; };
 		397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A481CA51ADB0034973A /* YLQDetailModel.m */; };
@@ -86,6 +96,10 @@
 		39E73E681C57BE1800E7B292 /* SiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E73E671C57BE1800E7B292 /* SiftViewController.m */; };
 		39E73E6B1C57BE2800E7B292 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E73E6A1C57BE2800E7B292 /* MessageViewController.m */; };
 		39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E73E6D1C57BE3500E7B292 /* MineViewController.m */; };
+		39FC24B61CE8D03500908C11 /* YLQAddContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC24B31CE8D03500908C11 /* YLQAddContactsView.m */; };
+		39FC24B71CE8D03500908C11 /* YLQContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC24B51CE8D03500908C11 /* YLQContactsViewController.m */; };
+		39FC24BB1CE8D48600908C11 /* YLQContactsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FC24BA1CE8D48600908C11 /* YLQContactsViewController.storyboard */; };
+		39FC24BD1CE8D84600908C11 /* YLQAddContactsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FC24BC1CE8D84600908C11 /* YLQAddContactsView.storyboard */; };
 		D11FB02C6E73DE5A8D5D767C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77B4CB5E32FE58155E97E22 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +212,20 @@
 		394C20F11C906EC000A3A722 /* YLQTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTopWindow.m; sourceTree = "<group>"; };
 		394C20F31C9075D700A3A722 /* FastJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastJobViewController.h; sourceTree = "<group>"; };
 		394C20F41C9075D700A3A722 /* FastJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastJobViewController.m; sourceTree = "<group>"; };
+		39667CE91CE89AEF00DC311E /* annotationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotationImage.png; sourceTree = "<group>"; };
+		39667CEA1CE89AEF00DC311E /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
+		39667CEB1CE89AEF00DC311E /* location_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_no@2x.png"; sourceTree = "<group>"; };
+		39667CEC1CE89AEF00DC311E /* location_yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_yes@2x.png"; sourceTree = "<group>"; };
+		39667CED1CE89AEF00DC311E /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		39667CEE1CE89AEF00DC311E /* AMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapViewController.h; sourceTree = "<group>"; };
+		39667CEF1CE89AEF00DC311E /* AMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapViewController.m; sourceTree = "<group>"; };
+		39667CF01CE89AEF00DC311E /* YLQAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQAnnotationView.h; sourceTree = "<group>"; };
+		39667CF11CE89AEF00DC311E /* YLQAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQAnnotationView.m; sourceTree = "<group>"; };
+		39667CF21CE89AEF00DC311E /* YLQCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQCalloutView.h; sourceTree = "<group>"; };
+		39667CF31CE89AEF00DC311E /* YLQCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQCalloutView.m; sourceTree = "<group>"; };
+		39667CF41CE89AEF00DC311E /* YLQDetailPageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQDetailPageViewViewController.h; sourceTree = "<group>"; };
+		39667CF51CE89AEF00DC311E /* YLQDetailPageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQDetailPageViewViewController.m; sourceTree = "<group>"; };
+		39667CF61CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQDetailPageViewViewController.storyboard; sourceTree = "<group>"; };
 		397C2A3C1CA502800034973A /* DetailJobMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailJobMessageController.h; sourceTree = "<group>"; };
 		397C2A3D1CA502800034973A /* DetailJobMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailJobMessageController.m; sourceTree = "<group>"; };
 		397C2A451CA512360034973A /* DetailJobMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailJobMessageController.storyboard; sourceTree = "<group>"; };
@@ -262,6 +290,12 @@
 		39E73E6A1C57BE2800E7B292 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		39E73E6C1C57BE3500E7B292 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		39E73E6D1C57BE3500E7B292 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		39FC24B21CE8D03500908C11 /* YLQAddContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQAddContactsView.h; sourceTree = "<group>"; };
+		39FC24B31CE8D03500908C11 /* YLQAddContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQAddContactsView.m; sourceTree = "<group>"; };
+		39FC24B41CE8D03500908C11 /* YLQContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQContactsViewController.h; sourceTree = "<group>"; };
+		39FC24B51CE8D03500908C11 /* YLQContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQContactsViewController.m; sourceTree = "<group>"; };
+		39FC24BA1CE8D48600908C11 /* YLQContactsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQContactsViewController.storyboard; sourceTree = "<group>"; };
+		39FC24BC1CE8D84600908C11 /* YLQAddContactsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQAddContactsView.storyboard; sourceTree = "<group>"; };
 		A77B4CB5E32FE58155E97E22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAE9DBBE2643412C8E389FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EED1D5B32CAF300AF877E022 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -454,6 +488,35 @@
 			path = "opencore-amrwb";
 			sourceTree = "<group>";
 		};
+		39667CE71CE89AEF00DC311E /* AMap(高德) */ = {
+			isa = PBXGroup;
+			children = (
+				39667CE81CE89AEF00DC311E /* images */,
+				39667CEE1CE89AEF00DC311E /* AMapViewController.h */,
+				39667CEF1CE89AEF00DC311E /* AMapViewController.m */,
+				39667CF01CE89AEF00DC311E /* YLQAnnotationView.h */,
+				39667CF11CE89AEF00DC311E /* YLQAnnotationView.m */,
+				39667CF21CE89AEF00DC311E /* YLQCalloutView.h */,
+				39667CF31CE89AEF00DC311E /* YLQCalloutView.m */,
+				39667CF41CE89AEF00DC311E /* YLQDetailPageViewViewController.h */,
+				39667CF51CE89AEF00DC311E /* YLQDetailPageViewViewController.m */,
+				39667CF61CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard */,
+			);
+			path = "AMap(高德)";
+			sourceTree = "<group>";
+		};
+		39667CE81CE89AEF00DC311E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				39667CE91CE89AEF00DC311E /* annotationImage.png */,
+				39667CEA1CE89AEF00DC311E /* building.png */,
+				39667CEB1CE89AEF00DC311E /* location_no@2x.png */,
+				39667CEC1CE89AEF00DC311E /* location_yes@2x.png */,
+				39667CED1CE89AEF00DC311E /* search@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		39E73E001C57B69F00E7B292 = {
 			isa = PBXGroup;
 			children = (
@@ -570,6 +633,7 @@
 		39E73E431C57BBEA00E7B292 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39667CE71CE89AEF00DC311E /* AMap(高德) */,
 				398C64011C8EEB4800C11C40 /* YLQScrollPage.h */,
 				398C64021C8EEB4800C11C40 /* YLQScrollPage.m */,
 				398C64061C8EFFB700C11C40 /* SecondView.h */,
@@ -652,6 +716,7 @@
 		39E73E491C57BBEA00E7B292 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				39FC24B11CE8D03500908C11 /* Friend(添加好友) */,
 				392F46F81CB0EF6F00F80D59 /* ChatView */,
 				39E73E691C57BE2800E7B292 /* MessageViewController.h */,
 				39E73E6A1C57BE2800E7B292 /* MessageViewController.m */,
@@ -819,6 +884,19 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		39FC24B11CE8D03500908C11 /* Friend(添加好友) */ = {
+			isa = PBXGroup;
+			children = (
+				39FC24B21CE8D03500908C11 /* YLQAddContactsView.h */,
+				39FC24B31CE8D03500908C11 /* YLQAddContactsView.m */,
+				39FC24BC1CE8D84600908C11 /* YLQAddContactsView.storyboard */,
+				39FC24B41CE8D03500908C11 /* YLQContactsViewController.h */,
+				39FC24B51CE8D03500908C11 /* YLQContactsViewController.m */,
+				39FC24BA1CE8D48600908C11 /* YLQContactsViewController.storyboard */,
+			);
+			path = "Friend(添加好友)";
+			sourceTree = "<group>";
+		};
 		3E958EB67C984E82CB0BB211 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -946,19 +1024,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				398C64561C8FCF4700C11C40 /* YLQHomeTableView.storyboard in Resources */,
+				39667D001CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard in Resources */,
 				397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */,
 				393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */,
+				39667CF71CE89AEF00DC311E /* annotationImage.png in Resources */,
 				393C87A41CAB634800B76AB2 /* StartButtonView.xib in Resources */,
 				392F476E1CB11F5500F80D59 /* Entitlements.plist in Resources */,
 				393C86C91CA822DC00B76AB2 /* MiaoJobController.storyboard in Resources */,
 				398C64051C8EF6D500C11C40 /* SecondView.xib in Resources */,
 				39E73E1C1C57B69F00E7B292 /* LaunchScreen.storyboard in Resources */,
 				3933B3601CB0AFC500393027 /* MineViewController.storyboard in Resources */,
+				39667CFB1CE89AEF00DC311E /* search@2x.png in Resources */,
+				39FC24BB1CE8D48600908C11 /* YLQContactsViewController.storyboard in Resources */,
+				39FC24BD1CE8D84600908C11 /* YLQAddContactsView.storyboard in Resources */,
+				39667CF91CE89AEF00DC311E /* location_no@2x.png in Resources */,
 				399985091CAC272C0079634E /* MessageViewController.storyboard in Resources */,
 				3933B3431CB0A04500393027 /* Login.storyboard in Resources */,
 				398C640D1C8F119F00C11C40 /* RefreshView.xib in Resources */,
+				39667CF81CE89AEF00DC311E /* building.png in Resources */,
 				39E73E191C57B69F00E7B292 /* Assets.xcassets in Resources */,
 				394C20E91C9060D600A3A722 /* YLQTableCell.xib in Resources */,
+				39667CFA1CE89AEF00DC311E /* location_yes@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,6 +1133,7 @@
 				3933B3381CB09FE100393027 /* EMCDDeviceManager+Microphone.m in Sources */,
 				398C640B1C8F118F00C11C40 /* RefreshView.m in Sources */,
 				393C87A21CAB633500B76AB2 /* StartButtonView.m in Sources */,
+				39667CFE1CE89AEF00DC311E /* YLQCalloutView.m in Sources */,
 				394C20EF1C906CB800A3A722 /* YLQRefreshFooter.m in Sources */,
 				392F47071CB0EF6F00F80D59 /* YLQTimeTool.m in Sources */,
 				392F47061CB0EF6F00F80D59 /* YLQChatPageViewController.m in Sources */,
@@ -1055,11 +1142,13 @@
 				393C86C71CA822CC00B76AB2 /* MiaoJobController.m in Sources */,
 				398C63E51C8EBA5900C11C40 /* YLQTabBar.m in Sources */,
 				39E73E6E1C57BE3500E7B292 /* MineViewController.m in Sources */,
+				39667CFC1CE89AEF00DC311E /* AMapViewController.m in Sources */,
 				397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */,
 				393C86C11CA7F39800B76AB2 /* TravelJobController.m in Sources */,
 				3933B3571CB0A1FD00393027 /* EMVoiceConverter.mm in Sources */,
 				393C86B81CA6776300B76AB2 /* DetailTableViewController.m in Sources */,
 				398C63FB1C8EC7A000C11C40 /* UIImage+Render.m in Sources */,
+				39667CFF1CE89AEF00DC311E /* YLQDetailPageViewViewController.m in Sources */,
 				39E73E5F1C57BCEB00E7B292 /* YLQTabBarController.m in Sources */,
 				3933B3351CB09FE100393027 /* EMAudioPlayerUtil.m in Sources */,
 				3933B3441CB0A04500393027 /* LoginViewController.m in Sources */,
@@ -1074,6 +1163,7 @@
 				398C63F21C8EBB5900C11C40 /* Globol.m in Sources */,
 				393C86D21CA8CB0800B76AB2 /* WaitJobController.m in Sources */,
 				3933B3371CB09FE100393027 /* EMCDDeviceManager+Media.m in Sources */,
+				39FC24B61CE8D03500908C11 /* YLQAddContactsView.m in Sources */,
 				392F47091CB0EF6F00F80D59 /* YLQChatPageCell.m in Sources */,
 				398C63F61C8EBB5900C11C40 /* UIView+Frame.m in Sources */,
 				39E73E621C57BD0D00E7B292 /* YLQNavigationController.m in Sources */,
@@ -1087,10 +1177,12 @@
 				397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */,
 				392F47081CB0EF6F00F80D59 /* YLQVoiceTool.m in Sources */,
 				398C64031C8EEB4800C11C40 /* YLQScrollPage.m in Sources */,
+				39FC24B71CE8D03500908C11 /* YLQContactsViewController.m in Sources */,
 				39E73E651C57BD9200E7B292 /* HomeViewController.m in Sources */,
 				393C86E11CA92B8800B76AB2 /* WeChatStylePlaceHolder.m in Sources */,
 				3933B33A1CB09FE100393027 /* EMCDDeviceManager+Remind.m in Sources */,
 				393C86D81CA8CB5F00B76AB2 /* WaitReviewController.m in Sources */,
+				39667CFD1CE89AEF00DC311E /* YLQAnnotationView.m in Sources */,
 				398C64101C8F2BEC00C11C40 /* YLQHomeTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

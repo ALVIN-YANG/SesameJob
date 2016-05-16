@@ -49,11 +49,6 @@
     startView.isAllowRandomImage = YES;
     startView.randomImages = [NSMutableArray arrayWithObjects:@"startImage4", @"startImage2", @"startImage1", @"startImage3", nil];
     
-    //LogoPositionCenter
-    //    startView.logoPosition = LogoPositionCenter;
-    //    startView.logoImage = [UIImage imageNamed:@"logo"];
-    
-    //LogoPositionCenter & UIView
     startView.logoPosition = LogoPositionButtom;
     StartButtonView *startButtonView = [[[NSBundle mainBundle] loadNibNamed:@"StartButtonView" owner:self options:nil] lastObject];
     startView.logoView = startButtonView;

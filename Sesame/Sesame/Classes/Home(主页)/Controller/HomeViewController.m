@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 #import "YLQScrollPage.h"
 #import "SecondView.h"
+//高德地图
+#import "AMapViewController.h"
 #import "RefreshView.h"
 #import "YLQHomeTableView.h"
 #import "YLQCellModel.h"
@@ -236,6 +238,9 @@ static NSString *const Mid = @"Mid";
 - (void)nearJobButtonClick
 {
     NSLog(@"点击了第三个Button");
+    
+    AMapViewController *aMapVC = [[AMapViewController alloc] init];
+    [self.navigationController pushViewController:aMapVC animated:YES];
 }
 
 - (void)travelJobButtonClick

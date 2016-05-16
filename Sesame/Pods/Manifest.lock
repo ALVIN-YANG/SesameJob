@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - AMap3DMap (3.3.2)
+  - AMapSearch (3.3.0)
   - CYLTableViewPlaceHolder (1.0.8)
   - EaseMobSDKFull (2.1.7)
   - Masonry (0.6.4)
@@ -26,6 +28,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AMap3DMap
+  - AMapSearch
   - CYLTableViewPlaceHolder
   - EaseMobSDKFull
   - Masonry
@@ -36,6 +40,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AMap3DMap: 6315b7489cb60b1c47bb51169b409c20efa5f527
+  AMapSearch: cff4faf59c007f7d1f2bae2d7170c3912783981a
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
   EaseMobSDKFull: 43858ca9a62bbe1fa4c7c006f944a3e52a4bff48
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
