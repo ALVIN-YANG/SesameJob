@@ -9,8 +9,9 @@
 #import "MineViewController.h"
 #import "FileCacheManager.h"
 #import <SVProgressHUD.h>
+#import <MessageUI/MessageUI.h>
 
-@interface MineViewController ()
+@interface MineViewController ()<MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cacheLabel;
@@ -25,7 +26,6 @@
     //获取当前登录用户名称
     NSDictionary *loginInfo = [[EaseMob sharedInstance].chatManager loginInfo];
     self.userNameLabel.text = loginInfo[@"username"];
-    
     
 }
 
@@ -85,6 +85,10 @@
     //cell背景选择后恢复
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    if (1 == indexPath.section && 0 == indexPath.row) {
+        [self submitIdea];
+    }
+    
     if (1 == indexPath.section && 2 == indexPath.row) {
         // 删除cache缓存
         // 获取cache文件夹路径
@@ -102,6 +106,53 @@
     }else if (1 == indexPath.section && 1 == indexPath.row) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://15653968657"]];
         }
+    
+}
+
+
+#pragma mark - Helper
+- (void)submitIdea {
+    
+    if ([MFMailComposeViewController canSendMail]) {
+        
+        
+        MFMailComposeViewController *mfMailComposeViewController = [[MFMailComposeViewController alloc] init];
+        mfMailComposeViewController.mailComposeDelegate = self;
+        [mfMailComposeViewController setSubject:@"Halo"];
+        
+        
+        [mfMailComposeViewController setToRecipients:@[@"13660154516@163.com"]];
+        [self presentViewController:mfMailComposeViewController animated:YES completion:nil];
+        
+        [mfMailComposeViewController setMessageBody:@"意见表<font color="">你好</font>，加个微信呗！<BR />P.S. Halo" isHTML:YES];
+    }
+}
+
+// 实现发送邮件的回调函数
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    switch (result) {
+        case MFMailComposeResultCancelled:
+            [self dismissViewControllerAnimated:YES completion:nil];
+            break;
+        case MFMailComposeResultSaved:
+            
+            break;
+        case MFMailComposeResultSent:
+            
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"faild:%@",[error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    [SVProgressHUD showInfoWithStatus:@"发送成功!"];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    });
+    
     
 }
 

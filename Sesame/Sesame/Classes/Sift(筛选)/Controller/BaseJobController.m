@@ -101,19 +101,20 @@
     //取消加载
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
    
-    [self.mgr GET:@"baidu.com" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        
-        
-        [self.tableView cyl_reloadData];
-        //结束刷新
-        [self.tableView.mj_footer endRefreshing];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self.tableView.mj_header endRefreshing];
-        //返回错误代码
-        if (error.code == NSURLErrorCancelled) return;
-//        [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
-    }];
+//    [self.mgr GET:nil parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        
+//        
+//        [self.tableView cyl_reloadData];
+//        //结束刷新
+//        [self.tableView.mj_footer endRefreshing];
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        [self.tableView.mj_header endRefreshing];
+//        //返回错误代码
+//        if (error.code == NSURLErrorCancelled) return;
+////        [SVProgressHUD showErrorWithStatus:@"网络繁忙,稍后尝试"];
+//    }];
+    [self.tableView.mj_footer endRefreshing];
 }
 
 #pragma mark - tabBarButtonDidRepeatClick

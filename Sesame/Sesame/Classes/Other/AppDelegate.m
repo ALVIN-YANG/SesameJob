@@ -42,6 +42,7 @@
     } else {
         //进入登录界面
         UIViewController *tabBarVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+        self.window.backgroundColor = [UIColor whiteColor];
         self.window.rootViewController = tabBarVC;
         [self.window makeKeyAndVisible];
     }

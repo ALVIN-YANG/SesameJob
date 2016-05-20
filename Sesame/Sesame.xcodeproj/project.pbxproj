@@ -63,6 +63,12 @@
 		39667CFE1CE89AEF00DC311E /* YLQCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CF31CE89AEF00DC311E /* YLQCalloutView.m */; };
 		39667CFF1CE89AEF00DC311E /* YLQDetailPageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39667CF51CE89AEF00DC311E /* YLQDetailPageViewViewController.m */; };
 		39667D001CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39667CF61CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard */; };
+		396A6E711CEF052400527D23 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396A6E701CEF052400527D23 /* MessageUI.framework */; };
+		396A6E731CEF428100527D23 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 396A6E721CEF428100527D23 /* libsqlite3.0.tbd */; };
+		396A6E791CEF432700527D23 /* SearchDBManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 396A6E761CEF432700527D23 /* SearchDBManage.m */; };
+		396A6E7A1CEF432700527D23 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 396A6E781CEF432700527D23 /* SearchModel.m */; };
+		396A6E7D1CEF435000527D23 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396A6E7C1CEF435000527D23 /* SearchViewController.m */; };
+		396A6E7F1CEF435C00527D23 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396A6E7E1CEF435C00527D23 /* SearchViewController.storyboard */; };
 		397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A3D1CA502800034973A /* DetailJobMessageController.m */; };
 		397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397C2A451CA512360034973A /* DetailJobMessageController.storyboard */; };
 		397C2A491CA51ADB0034973A /* YLQDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C2A481CA51ADB0034973A /* YLQDetailModel.m */; };
@@ -100,6 +106,12 @@
 		39FC24B71CE8D03500908C11 /* YLQContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FC24B51CE8D03500908C11 /* YLQContactsViewController.m */; };
 		39FC24BB1CE8D48600908C11 /* YLQContactsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FC24BA1CE8D48600908C11 /* YLQContactsViewController.storyboard */; };
 		39FC24BD1CE8D84600908C11 /* YLQAddContactsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FC24BC1CE8D84600908C11 /* YLQAddContactsView.storyboard */; };
+		39FC25161CEAC2D600908C11 /* icon_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25101CEAC2D600908C11 /* icon_hand.png */; };
+		39FC25171CEAC2D600908C11 /* iconfont-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25111CEAC2D600908C11 /* iconfont-password.png */; };
+		39FC25181CEAC2D600908C11 /* iconfont-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25121CEAC2D600908C11 /* iconfont-user.png */; };
+		39FC25191CEAC2D600908C11 /* owl-login-arm-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25131CEAC2D600908C11 /* owl-login-arm-left@2x.png */; };
+		39FC251A1CEAC2D600908C11 /* owl-login-arm-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25141CEAC2D600908C11 /* owl-login-arm-right@2x.png */; };
+		39FC251B1CEAC2D600908C11 /* owl-login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FC25151CEAC2D600908C11 /* owl-login@2x.png */; };
 		D11FB02C6E73DE5A8D5D767C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77B4CB5E32FE58155E97E22 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +238,15 @@
 		39667CF41CE89AEF00DC311E /* YLQDetailPageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQDetailPageViewViewController.h; sourceTree = "<group>"; };
 		39667CF51CE89AEF00DC311E /* YLQDetailPageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQDetailPageViewViewController.m; sourceTree = "<group>"; };
 		39667CF61CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQDetailPageViewViewController.storyboard; sourceTree = "<group>"; };
+		396A6E701CEF052400527D23 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		396A6E721CEF428100527D23 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		396A6E751CEF432700527D23 /* SearchDBManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDBManage.h; sourceTree = "<group>"; };
+		396A6E761CEF432700527D23 /* SearchDBManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDBManage.m; sourceTree = "<group>"; };
+		396A6E771CEF432700527D23 /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
+		396A6E781CEF432700527D23 /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
+		396A6E7B1CEF435000527D23 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		396A6E7C1CEF435000527D23 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		396A6E7E1CEF435C00527D23 /* SearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		397C2A3C1CA502800034973A /* DetailJobMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailJobMessageController.h; sourceTree = "<group>"; };
 		397C2A3D1CA502800034973A /* DetailJobMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailJobMessageController.m; sourceTree = "<group>"; };
 		397C2A451CA512360034973A /* DetailJobMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailJobMessageController.storyboard; sourceTree = "<group>"; };
@@ -296,6 +317,12 @@
 		39FC24B51CE8D03500908C11 /* YLQContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQContactsViewController.m; sourceTree = "<group>"; };
 		39FC24BA1CE8D48600908C11 /* YLQContactsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQContactsViewController.storyboard; sourceTree = "<group>"; };
 		39FC24BC1CE8D84600908C11 /* YLQAddContactsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YLQAddContactsView.storyboard; sourceTree = "<group>"; };
+		39FC25101CEAC2D600908C11 /* icon_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hand.png; sourceTree = "<group>"; };
+		39FC25111CEAC2D600908C11 /* iconfont-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-password.png"; sourceTree = "<group>"; };
+		39FC25121CEAC2D600908C11 /* iconfont-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-user.png"; sourceTree = "<group>"; };
+		39FC25131CEAC2D600908C11 /* owl-login-arm-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login-arm-left@2x.png"; sourceTree = "<group>"; };
+		39FC25141CEAC2D600908C11 /* owl-login-arm-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login-arm-right@2x.png"; sourceTree = "<group>"; };
+		39FC25151CEAC2D600908C11 /* owl-login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "owl-login@2x.png"; sourceTree = "<group>"; };
 		A77B4CB5E32FE58155E97E22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAE9DBBE2643412C8E389FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EED1D5B32CAF300AF877E022 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +333,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396A6E731CEF428100527D23 /* libsqlite3.0.tbd in Frameworks */,
+				396A6E711CEF052400527D23 /* MessageUI.framework in Frameworks */,
 				D11FB02C6E73DE5A8D5D767C /* libPods.a in Frameworks */,
 				3933B3591CB0A1FD00393027 /* libopencore-amrwb.a in Frameworks */,
 				3933B3581CB0A1FD00393027 /* libopencore-amrnb.a in Frameworks */,
@@ -414,6 +443,7 @@
 		3933B33C1CB0A04500393027 /* Launch(登录) */ = {
 			isa = PBXGroup;
 			children = (
+				39FC250F1CEAC2D600908C11 /* Images */,
 				3933B33D1CB0A04500393027 /* Controller */,
 				3933B3411CB0A04500393027 /* Model */,
 				3933B3421CB0A04500393027 /* View */,
@@ -517,6 +547,20 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		396A6E741CEF42C000527D23 /* SearchList(搜索) */ = {
+			isa = PBXGroup;
+			children = (
+				396A6E751CEF432700527D23 /* SearchDBManage.h */,
+				396A6E761CEF432700527D23 /* SearchDBManage.m */,
+				396A6E771CEF432700527D23 /* SearchModel.h */,
+				396A6E781CEF432700527D23 /* SearchModel.m */,
+				396A6E7B1CEF435000527D23 /* SearchViewController.h */,
+				396A6E7C1CEF435000527D23 /* SearchViewController.m */,
+				396A6E7E1CEF435C00527D23 /* SearchViewController.storyboard */,
+			);
+			path = "SearchList(搜索)";
+			sourceTree = "<group>";
+		};
 		39E73E001C57B69F00E7B292 = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +650,7 @@
 		39E73E411C57BBEA00E7B292 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				396A6E741CEF42C000527D23 /* SearchList(搜索) */,
 				39E73E631C57BD9200E7B292 /* HomeViewController.h */,
 				39E73E641C57BD9200E7B292 /* HomeViewController.m */,
 				394C20F31C9075D700A3A722 /* FastJobViewController.h */,
@@ -897,9 +942,24 @@
 			path = "Friend(添加好友)";
 			sourceTree = "<group>";
 		};
+		39FC250F1CEAC2D600908C11 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				39FC25101CEAC2D600908C11 /* icon_hand.png */,
+				39FC25111CEAC2D600908C11 /* iconfont-password.png */,
+				39FC25121CEAC2D600908C11 /* iconfont-user.png */,
+				39FC25131CEAC2D600908C11 /* owl-login-arm-left@2x.png */,
+				39FC25141CEAC2D600908C11 /* owl-login-arm-right@2x.png */,
+				39FC25151CEAC2D600908C11 /* owl-login@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		3E958EB67C984E82CB0BB211 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				396A6E721CEF428100527D23 /* libsqlite3.0.tbd */,
+				396A6E701CEF052400527D23 /* MessageUI.framework */,
 				A77B4CB5E32FE58155E97E22 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1023,8 +1083,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FC25171CEAC2D600908C11 /* iconfont-password.png in Resources */,
 				398C64561C8FCF4700C11C40 /* YLQHomeTableView.storyboard in Resources */,
 				39667D001CE89AEF00DC311E /* YLQDetailPageViewViewController.storyboard in Resources */,
+				39FC25161CEAC2D600908C11 /* icon_hand.png in Resources */,
 				397C2A461CA512360034973A /* DetailJobMessageController.storyboard in Resources */,
 				393C86C41CA802F700B76AB2 /* TravelJobController.storyboard in Resources */,
 				39667CF71CE89AEF00DC311E /* annotationImage.png in Resources */,
@@ -1035,16 +1097,21 @@
 				39E73E1C1C57B69F00E7B292 /* LaunchScreen.storyboard in Resources */,
 				3933B3601CB0AFC500393027 /* MineViewController.storyboard in Resources */,
 				39667CFB1CE89AEF00DC311E /* search@2x.png in Resources */,
+				39FC25181CEAC2D600908C11 /* iconfont-user.png in Resources */,
 				39FC24BB1CE8D48600908C11 /* YLQContactsViewController.storyboard in Resources */,
+				39FC251A1CEAC2D600908C11 /* owl-login-arm-right@2x.png in Resources */,
 				39FC24BD1CE8D84600908C11 /* YLQAddContactsView.storyboard in Resources */,
 				39667CF91CE89AEF00DC311E /* location_no@2x.png in Resources */,
 				399985091CAC272C0079634E /* MessageViewController.storyboard in Resources */,
 				3933B3431CB0A04500393027 /* Login.storyboard in Resources */,
+				39FC251B1CEAC2D600908C11 /* owl-login@2x.png in Resources */,
+				396A6E7F1CEF435C00527D23 /* SearchViewController.storyboard in Resources */,
 				398C640D1C8F119F00C11C40 /* RefreshView.xib in Resources */,
 				39667CF81CE89AEF00DC311E /* building.png in Resources */,
 				39E73E191C57B69F00E7B292 /* Assets.xcassets in Resources */,
 				394C20E91C9060D600A3A722 /* YLQTableCell.xib in Resources */,
 				39667CFA1CE89AEF00DC311E /* location_yes@2x.png in Resources */,
+				39FC25191CEAC2D600908C11 /* owl-login-arm-left@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,6 +1188,7 @@
 				394C20F21C906EC000A3A722 /* YLQTopWindow.m in Sources */,
 				394C20E41C90609900A3A722 /* YLQCellModel.m in Sources */,
 				39E73E5B1C57BBEA00E7B292 /* AppDelegate.m in Sources */,
+				396A6E791CEF432700527D23 /* SearchDBManage.m in Sources */,
 				398C64081C8EFFB800C11C40 /* SecondView.m in Sources */,
 				394C20EC1C906C8B00A3A722 /* YLQRefreshHeader.m in Sources */,
 				394C20E81C9060D600A3A722 /* YLQTableCell.m in Sources */,
@@ -1160,6 +1228,7 @@
 				3933B3561CB0A1FD00393027 /* wav.mm in Sources */,
 				3933B3631CB0C14700393027 /* FileCacheManager.m in Sources */,
 				398C63F41C8EBB5900C11C40 /* NSDate+Interval.m in Sources */,
+				396A6E7A1CEF432700527D23 /* SearchModel.m in Sources */,
 				398C63F21C8EBB5900C11C40 /* Globol.m in Sources */,
 				393C86D21CA8CB0800B76AB2 /* WaitJobController.m in Sources */,
 				3933B3371CB09FE100393027 /* EMCDDeviceManager+Media.m in Sources */,
@@ -1177,6 +1246,7 @@
 				397C2A3E1CA502800034973A /* DetailJobMessageController.m in Sources */,
 				392F47081CB0EF6F00F80D59 /* YLQVoiceTool.m in Sources */,
 				398C64031C8EEB4800C11C40 /* YLQScrollPage.m in Sources */,
+				396A6E7D1CEF435000527D23 /* SearchViewController.m in Sources */,
 				39FC24B71CE8D03500908C11 /* YLQContactsViewController.m in Sources */,
 				39E73E651C57BD9200E7B292 /* HomeViewController.m in Sources */,
 				393C86E11CA92B8800B76AB2 /* WeChatStylePlaceHolder.m in Sources */,

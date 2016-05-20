@@ -13,7 +13,7 @@
 #import "YLQDetailPageViewViewController.h"
 #import "YLQCalloutView.h"
 
-#define APIKey @"5eb87fbf5ed4f0c53cc087a77d7aaca1"
+#define APIKey @"9ce2dcdd1967cb94af38501f0be0243e"
 
 #define kDefaultLocationZoomLevel       16.1
 #define kDefaultControlMargin           22
@@ -94,22 +94,30 @@
     
     /**初始化附近搜索按钮*/
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    searchButton.frame = CGRectMake(80, CGRectGetHeight(_mapView.bounds) - 80, 40, 40);
+    searchButton.frame = CGRectMake(80, CGRectGetHeight(_mapView.bounds) - 80, 80, 40);
     searchButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
     searchButton.backgroundColor = [UIColor whiteColor];
-    [searchButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
-    
+//    [searchButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+    [searchButton setTitle:@"搜索周边" forState:UIControlStateNormal];
+    [searchButton setTintColor:[UIColor orangeColor]];
+    searchButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    searchButton.layer.borderWidth = 0.5;
     [searchButton addTarget:self action:@selector(searchAction) forControlEvents:UIControlEventTouchUpInside];
     
     [_mapView addSubview:searchButton];
     
     /*初始化路线搜索按钮*/
     UIButton *pathButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    pathButton.frame = CGRectMake(140, CGRectGetHeight(_mapView.bounds) - 60, 40, 40);
+    pathButton.frame = CGRectMake(160, CGRectGetHeight(_mapView.bounds) - 80, 60, 40);
+    pathButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    pathButton.layer.borderWidth = 0.5;
     pathButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin |
     UIViewAutoresizingFlexibleTopMargin;
     pathButton.backgroundColor = [UIColor whiteColor];
-    [pathButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+//    [pathButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+    [pathButton setTitle:@"路线" forState:UIControlStateNormal];
+    [pathButton setTintColor:[UIColor orangeColor]];
+    
     [pathButton addTarget:self action:@selector(pathAction)
          forControlEvents:UIControlEventTouchUpInside];
     [_mapView addSubview:pathButton];

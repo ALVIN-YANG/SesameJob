@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "YLQScrollPage.h"
 #import "SecondView.h"
+#import "SearchViewController.h"
 //高德地图
 #import "AMapViewController.h"
 #import "RefreshView.h"
@@ -65,6 +66,7 @@ static NSString *const Mid = @"Mid";
     self.tableView.backgroundColor = YLQColor(210, 210, 210)
     [self setupTableView];
     [self downUpdate];
+    [self setupNavigation];
     //对tabBarButton的监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarButtonDidRepeatClick) name:YLQTabBarButtonDidRepeatClickNotification object:nil];
     //对title监听
@@ -154,6 +156,25 @@ static NSString *const Mid = @"Mid";
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([YLQTableCell class]) bundle:nil] forCellReuseIdentifier:ID];
 
+}
+
+#pragma mark - setupNavigation
+- (void)setupNavigation
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"搜索" forState:UIControlStateNormal];
+   
+    [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(SearchButtonClick) forControlEvents:UIControlEventTouchUpInside];
+     [btn sizeToFit];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [self.navigationItem setRightBarButtonItem:leftButton];
+}
+
+- (void)SearchButtonClick
+{
+    SearchViewController *searchVC = [[UIStoryboard storyboardWithName:NSStringFromClass([SearchViewController class]) bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:searchVC animated:YES];
 }
 
 #pragma mark - update

@@ -72,17 +72,17 @@
 }
 
 #pragma mark - EMChatManagerDelegate
-//网络状态改变的回调
-- (void)didConnectionStateChanged:(EMConnectionState)connectionState
-{
-    //
-    if (eEMConnectionDisconnected == connectionState) {
-        NSLog(@"未连接");
-        self.title = @"未连接";
-    } else {
-        NSLog(@"恢复连接");
-    }
-}
+////网络状态改变的回调
+//- (void)didConnectionStateChanged:(EMConnectionState)connectionState
+//{
+//    //
+//    if (eEMConnectionDisconnected == connectionState) {
+//        NSLog(@"未连接");
+//        self.title = @"未连接";
+//    } else {
+//        NSLog(@"恢复连接");
+//    }
+//}
 
 /*!
  @method
@@ -90,9 +90,9 @@
  @discussion
  @result
  */
-- (void)willAutoReconnect {
-    self.title = @"连接中";
-}
+//- (void)willAutoReconnect {
+//    self.title = @"连接中";
+//}
 
 /*!
  @method

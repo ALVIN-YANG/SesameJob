@@ -20,7 +20,7 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [btn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
-        //一定要设置尺寸
+        //一定要设置尺寸;
         [btn sizeToFit];
         [self addSubview:btn];
         _plusButton = btn;

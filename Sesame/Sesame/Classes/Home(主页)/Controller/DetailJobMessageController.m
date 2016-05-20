@@ -54,4 +54,10 @@
 //    [self.containerView addSubview:detailVC.view];
 }
 
+- (IBAction)baomingClick:(id)sender {
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://15653968657"]];
+}
+
+
+
 @end
