@@ -73,6 +73,11 @@
     YLQNavigationController *nv4 = [[YLQNavigationController alloc] initWithRootViewController:vc4];
     [self addChildViewController:nv4];
     
+//    //我
+//    MineViewController *vc5 = [[UIStoryboard storyboardWithName:NSStringFromClass([MineViewController class]) bundle:nil] instantiateInitialViewController];
+//    YLQNavigationController *nv5 = [[YLQNavigationController alloc] initWithRootViewController:vc5];
+//    [self addChildViewController:nv5];
+    
 }
 
 #pragma mark - setupTabBarButton
@@ -97,6 +102,12 @@
     nv4.tabBarItem.title = @"我";
     nv4.tabBarItem.image = [UIImage imageNamed:@"personal_center"];
     nv4.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"personal_center_hl"];
+    
+//    //我
+//    YLQNavigationController *nv5 = self.childViewControllers[4];
+//    nv5.tabBarItem.title = @"我";
+//    nv5.tabBarItem.image = [UIImage imageNamed:@"personal_center"];
+//    nv5.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"personal_center_hl"];
 }
 
 #pragma mark - 自定义tabBar
@@ -104,6 +115,37 @@
 {
     // UITabBar 换成 YLQTabBar  setvalue可以给私有属性赋值,可以给只读属性赋值
     YLQTabBar *tabBar = [[YLQTabBar alloc] init];
+    [tabBar.plusButton addTarget:self action:@selector(plusButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self setValue:tabBar forKey:@"tabBar"];
+}
+
+- (void)plusButtonClick
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = UIColorFromHex(0xDE1400);
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 350, 200)];
+    [label setPreferredMaxLayoutWidth:300];
+    [label setText:@"Created by 杨卢青 \n\n      on 2016"];
+    [label setTextColor:[UIColor whiteColor]];
+    label.numberOfLines = 0;
+    label.ylq_x = self.view.ylq_width * 0.04;
+    label.ylq_y = self.view.center.y - 150;
+//    label.center = self.view.center;
+//    label.ylq_width = 300;
+//    [label sizeToFit];
+//    [label setEnabled:YES];
+    label.textAlignment = NSTextAlignmentCenter;
+    [label setFont:[UIFont systemFontOfSize:30]];
+    [vc.view addSubview:label];
+    vc.view.frame = self.view.frame;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchBack)];
+    [vc.view addGestureRecognizer:tapGesture];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)touchBack
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

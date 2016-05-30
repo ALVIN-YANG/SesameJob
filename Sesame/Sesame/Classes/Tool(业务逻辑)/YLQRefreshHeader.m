@@ -38,7 +38,7 @@
 }
 
 /**
- *  摆放子控件, 把公司logo放在上面
+ *  摆放子控件, 把logo放在上面
  */
 - (void)placeSubviews{
     [super placeSubviews];

@@ -48,7 +48,7 @@
     }
     YFStartView *startView = [YFStartView startView];
     startView.isAllowRandomImage = YES;
-    startView.randomImages = [NSMutableArray arrayWithObjects:@"startImage4", @"startImage2", @"startImage1", @"startImage3", nil];
+    startView.randomImages = [NSMutableArray arrayWithObjects:@"launch2", nil];
     
     startView.logoPosition = LogoPositionButtom;
     StartButtonView *startButtonView = [[[NSBundle mainBundle] loadNibNamed:@"StartButtonView" owner:self options:nil] lastObject];

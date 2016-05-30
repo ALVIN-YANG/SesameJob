@@ -100,6 +100,8 @@
             
             [SVProgressHUD showInfoWithStatus:@"登陆成功!"];
             [UIApplication sharedApplication].keyWindow.backgroundColor = [UIColor whiteColor];
+            
+            
             [UIView animateWithDuration:1.7 animations:^{
                 self.view.backgroundColor = [UIColor orangeColor];
                 //进入主界面

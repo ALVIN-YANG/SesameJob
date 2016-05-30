@@ -9,7 +9,7 @@
 #import "YLQTabBar.h"
 
 @interface YLQTabBar()
-@property (nonatomic, weak) UIButton *plusButton;
+
 @property (nonatomic, assign)NSInteger previousClickedTabBarButtonTag;
 @end
 @implementation YLQTabBar

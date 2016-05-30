@@ -9,9 +9,6 @@
 #import "SearchViewController.h"
 #import "SearchDBManage.h"
 
-#define UIColorFromRGB(rgbValue) [UIColor  colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0  green:((float)((rgbValue & 0xFF00) >> 8))/255.0  blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-//设置RGB颜色值
-#define COLOR(R,G,B,A)	[UIColor colorWithRed:(CGFloat)R/255 green:(CGFloat)G/255 blue:(CGFloat)B/255 alpha:A]
 // 最大存储的搜索历史 条数
 #define MAX_COUNT 5
 

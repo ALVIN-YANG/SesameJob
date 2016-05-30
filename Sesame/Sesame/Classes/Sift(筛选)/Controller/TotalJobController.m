@@ -50,9 +50,14 @@ static NSString *const CellID = @"CellID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld份工作", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"第%ld份工作", indexPath.row + 1];
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
 }
 
 

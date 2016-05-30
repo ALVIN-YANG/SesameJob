@@ -62,6 +62,10 @@ static NSString *const Mid = @"Mid";
 #pragma mark - viewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *homeDir = NSHomeDirectory();
+    NSLog(@" \n 路径:\n%@", homeDir);
+    
     self.navigationItem.title = @"芝麻兼职";
     self.tableView.backgroundColor = YLQColor(210, 210, 210)
     [self setupTableView];

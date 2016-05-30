@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YLQTabBar : UITabBar
-
+@property (nonatomic, weak) UIButton *plusButton;
 @end
